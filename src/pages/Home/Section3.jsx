@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Section3 = () => {
   return (
     <>
-      <section className="py-7 bg-clrLightGraygh">
-        <div className="custom_container">
+      <section className="py-7 bg-clrLightGray">
+        <div className="custom_container bg-clrWhite">
           <div className="lg:grid lg:grid-cols-5 gap-4">
             <div className="col-span-3 ">
              <div className="flex flex-col gap-4 justify-center h-full">

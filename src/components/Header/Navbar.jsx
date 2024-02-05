@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Nav_Lists from "./Nav_List";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import logo from '../../assets/images/asset0.png'
 function Navbar() {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
@@ -13,8 +13,8 @@ function Navbar() {
     <header className="bg-white py-5">
       <nav className="custom_container mx-auto flex justify-center gap-10">
         <Link to="/" className="logo-image-containter">
-          {/* <img src="" alt="" /> */}
-          <h1>Dunagir</h1>
+          <img src={logo} alt="logo" />
+          
         </Link>
         <ul className="lg:flex gap-5 hidden">
           {Nav_Lists.map((links,i) => {
