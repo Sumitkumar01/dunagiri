@@ -11,9 +11,7 @@ const Nav_Lists = [
     linkName: "Retreats",
     src: "/",
     subMenu: [
-      "self guide exploration",
-      "self guide exploration",
-      "self guide exploration",
+      {linkName:"self guide exploration",src:'/'},
     ],
   },
   {
