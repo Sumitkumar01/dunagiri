@@ -19,17 +19,17 @@ function ARSoul() {
     <section className="py-7">
       <div className="custom_container">
       <div className="">
-        <h2 className="text-5xl text-center">{heading}</h2>
+        <h2 className="lg:text-6xl text-3xl ff-f text-center">{heading}</h2>
       </div>
       <div className="mt-3">
         {arsoulText.map((item, i) => (
-          <p className="text-lg text-justify" key={i}>
+          <p className="text-lg ff-l font-normal text-justify" key={i}>
             {item.text}
           </p>
         ))}
       </div>
       <div className="w-full text-center mt-5">
-        <Link to="/" className="text-sm text-center py-2 px-7 uppercase bg-clrDarkGreen text-clrWhite border border-clrLightGreen hover:bg-clrWhite hover:text-clrLightGreen">about us</Link>
+        <Link to="/" className="text-sm text-center py-2 px-7 uppercase bg-clrLightGreen text-clrWhite border border-clrLightGreen hover:bg-clrWhite hover:text-clrLightGreen">about us</Link>
       </div>
       </div>
     </section>

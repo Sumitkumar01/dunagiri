@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "./Banner";
 import Contact from "../../components/Contact/Contact";
-import SliderSection1 from "./SliderSection1";
+// import SliderSection1 from "./SliderSection1";
 import ARSoul from "./ARSoul";
 import Section1 from "./Section1";
 import AreUSection from "./AreUSection";
@@ -11,7 +11,7 @@ import ForthSection from "./ForthSection";
 import FifthSection from "./FifthSection";
 import Section3 from "./Section3";
 import Testimonials from "./Testimonials";
-import Section2 from "./Section2";
+// import Section2 from "./Section2";
 
 function homepage() {
   return (

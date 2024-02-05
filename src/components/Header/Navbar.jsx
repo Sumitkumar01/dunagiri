@@ -7,6 +7,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
     setOpen(!open);
+    window.document.body.classList.toggle('bg_hidden')
   };
   return (
     <header className="bg-white py-5">
@@ -19,12 +20,12 @@ function Navbar() {
           {Nav_Lists.map((links,i) => {
             return (
               <li key={i}>
-                <Link to="/" className="capitalize text-xl font-normal">
+                <Link to="/" className="capitalize text-xl font-normal group">
                   {links.linkName}
                 </Link>
                 {links.subMenu && (
-                  <div>
-                    <ul>
+                  <div className="sub_menu">
+                    <ul >
                       {links.subMenu.map((sub,i) => {
                         return (
                           <li key={i}>

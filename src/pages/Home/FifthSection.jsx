@@ -26,11 +26,11 @@ function FifthSection() {
     <section className="fifth-Section">
       <div className="py-7 bg-clrDarkGreen">
         <div className="custom_container">
-          <h2 className="capitalize text-5xl text-clrWhite font-semibold text-center py-6">
+          <h2 className="capitalize lg:text-6xl text-3xl ff-f  text-clrWhite font-semibold text-center py-6">
             Why Choose Us
           </h2>
 
-          <p className="text-clrWhite text-lg font-normal text-justify">
+          <p className="text-clrWhite text-lg font-normal text-justify ff-l">
             Why Choose Us Dunagiri Retreat offers a transformative experience
             for those seeking to deepen their spiritual practice in the majestic
             Himalayas. This revered location has historically been a tapo-bhumi,
@@ -50,23 +50,23 @@ function FifthSection() {
       {data.map((item, i) => (
         <div
           key={i}
-          className="bg-cover border flex items-end py-10 border-clrDarkGreen bg-current bg-no-repeat h-[70vh]"
+          className="bg-cover border lg:flex items-end py-10 border-clrDarkGreen bg-current bg-no-repeat lg:h-[70vh] h-[80vh]"
           style={{ backgroundImage: `url(${item.imgUrl})` }}
         >
           <div
             className={`custom_container flex justify-${
-              i % 2 == 0 ? "start" : "end"
+              i % 2 === 0 ? "start" : "end"
             }`}
           >
-            <div className="w-[70%] bg-clrWhite py-8 px-28 flex flex-col gap-7">
-              <h3 className="text-3xl font-normal text-clrDarkGreen">
+            <div className="lg:w-[70%] bg-clrWhite py-8 lg:px-28 md:px-24 px-14 flex flex-col gap-7">
+              <h3 className="lg:text-5xl text-2xl ff-f font-normal text-clrDarkGreen">
                 {i + 1}. {item.heading}
               </h3>
-              <p className="text-lg">{item.description}</p>
+              <p className="text-lg font-normal ff-l">{item.description}</p>
               <div className="hover:border-b-clrLightGreen hover:border-b w-max pe-6">
                 <Link
                   to="#"
-                  className="text-decoration-none capitalize text-base"
+                  className="text-decoration-none capitalize text-base ff-l font-normal"
                 >
                   read more
                 </Link>

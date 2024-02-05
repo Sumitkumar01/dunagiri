@@ -26,24 +26,24 @@ function ChoosePathSection() {
   return (
     <section className="bg-clrLightOrange py-7">
       <div className="custom_container">
-        <div className="text-center">
-          <h2 className="">{cpHeading}</h2>
+        <div className="py-3">
+          <h2 className="ff-f lg:text-6xl text-3xl text-center text-clrDarkGreen">{cpHeading}</h2>
         </div>
-        <div className=" text-center">
-          <p className="">{cphText}</p>
+        <div className="py-3">
+          <p className="text-center ff-l lg:text-xl text-base font-normal">{cphText}</p>
         </div>
         <div className="">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid lg:grid-cols-2 gap-4">
             {cpData.map((item, i) => (
               <div className="flex flex-col gap-5 p-2" key={i}>
                 <div className="">
                   <img src={item.img} className="rounded-full" alt="" />
                 </div>
                 <div className="">
-                  <h3 className="">{item.hText}</h3>
+                  <h3 className="ff-f lg:text-6xl text-3xl text-clrDarkGreen">{item.hText}</h3>
                 </div>
                 <div className="">
-                  <p className="text-justify">{item.pText}</p>
+                  <p className="text-justify text-center ff-l lg:text-xl text-base font-normal">{item.pText}</p>
                 </div>
                 <div className="">
                   <Link

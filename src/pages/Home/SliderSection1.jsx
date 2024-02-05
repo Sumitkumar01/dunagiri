@@ -2,7 +2,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
-import FeatureCard from "./FeatureCard";
 import featurelogo from "../../assets/images/logo-cnntravel.webp";
 import featurelogo1 from "../../assets/images/307_Outlook_Traveller_edited.png";
 import featurelogo2 from "../../assets/images/pngwing_com.png";

@@ -28,9 +28,9 @@ function Footer() {
   return (
     <section className="footer-section bg-clrDarkGreen py-7">
       <div className="custom_container">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-4">
           <div className="">
-            <h2 className="text-white">Contact Us</h2>
+            <h2 className="text-white text-lg font-medium ff-p">Contact Us</h2>
             <p className="text-white mb-1 ">
               TEL:{" "}
               <Link to="tel:+919810267719" aria-label="Call us">
@@ -57,7 +57,7 @@ function Footer() {
           </div>
 
           <div className="">
-            <h3 className="text-white">Address</h3>
+            <h3 className="text-white text-lg font-medium ff-p">Address</h3>
             <p className="text-white mb-1 ">
               Village Chari, Near Mahavatar Babaji's Cave, PO Dunagiri,
             </p>
@@ -65,16 +65,17 @@ function Footer() {
               Block Dwarahat, District Almora Uttarakhand, India{" "}
             </p>
           </div>
-          <div className="flex justify-end w-full">
-            <div className=" w-[80%]">
+          <div className="flex lg:justify-end w-full">
+            <div className="lg:w-[80%]">
               <div className="">
-                <h3 className="text-white">Follow Us</h3>
+                <h3 className="text-white text-lg font-medium ff-p">Follow Us</h3>
                 <ul className="flex gap-4 py-3">
                   {socialContact.map((item, i) => (
                     <li key={i}>
                       <Link
                         to={item.link}
                         className=""
+                        target="_blank"
                       >
                         <img src={item.url} alt="log" width={36} height={36} aria-label="logo" />
                       </Link>
@@ -82,8 +83,8 @@ function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="text-white">
-                <h3 className="">We Accept</h3>
+              <div className="">
+                <h3 className="text-white text-lg font-medium ff-p">We Accept</h3>
                 <div className="flex gap-4 py-3">
 
                   <img
@@ -109,7 +110,7 @@ function Footer() {
           <ul className="lg:flex justify-between">
             {linkData.map((item, i) => (
               <li className="list-none" key={i}>
-                <Link to="/" className="text-clrWhite underline">
+                <Link to="/" className="text-clrWhite underline text-lg font-medium ff-p">
                   {item.name}
                 </Link>
               </li>
@@ -117,7 +118,7 @@ function Footer() {
           </ul>
         </div>
         <div className="py-6">
-          <p className="text-center text-white">© 2023 by DUNAGIRI RETREAT </p>
+          <p className="text-center text-white  text-lg font-medium ff-p">© 2023 by DUNAGIRI RETREAT </p>
         </div>
       </div>
     </section>

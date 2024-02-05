@@ -1,40 +1,17 @@
-html {
-  background-color: rgb(244, 244, 244);
+/* :root{
+  overflow: hidden;
+} */
+
+.ff-f {
+  font-family: 'fraunces', sans-serif;
 }
 
-header {
-  nav {
-    ul {
-      li{
-        border-top: 3px solid rgb(71, 71, 71);
-        padding: 0.2rem 1rem;
-        cursor: pointer;
-        position: relative;
-        &:hover {
-          border-top: 3px solid rgb(192, 131, 40);
-        }
-        > div {
-          display: none;
-          position: absolute;
-          top: 100%;
-          left: -60%;
-          min-width: 200px;
-          background-color: rgba(233, 229, 229, 0.622);
-          ul {
-            display: flex;
-            flex-direction: column;
-            padding: 0.2rem 0.3rem;
-            gap: 0.5rem;
-          }
-        }
-        &:hover > div {
-          display: block;
-        }
-      }
-    }
-  }
+.ff-l {
+  font-family: 'lato', sans-serif ;
 }
-
+.ff-g{
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
 
 .custom_container{
   max-width: 1320px;
@@ -49,9 +26,12 @@ header {
     margin: 0 auto;
     padding: 0 1rem;
   }
+  .bg_hidden{
+    overflow: hidden;
+  }
 }
 
-@media (width<640) {
+@media (width<568px) {
   .custom_container{
     max-width: 100%;
     margin: 0 auto;

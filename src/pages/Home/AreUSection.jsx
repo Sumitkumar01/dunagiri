@@ -51,36 +51,36 @@ function AreUSection() {
   return (
     <section className="py-7">
       <div className="custom_container">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 gap-4">
           <div className="">
-            <img src={WowImageAreYou} className="img-fluid h-100" alt="WowImageAreYou" />
+            <img
+              src={WowImageAreYou}
+              className="h-full"
+              alt="WowImageAreYou"
+            />
           </div>
           <div className="col-span-2">
-            <div className="">
-              <p className="text-uppercase ff-l are-u-head-p-text">
+            <div className="py-3">
+              <p className="uppercase ff-l font-light text-3xl">
                 {pheadingText}
               </p>
             </div>
-            <div className="">
-              <h2 className="are-u-heading ff-f">{headingText}</h2>
+            <div className="py-3">
+              <h2 className="lg:text-6xl text-3xl font-medium text-clrLightGreen ff-f">
+                {headingText}
+              </h2>
             </div>
-            <div className="grid grid-cols-2">
-              {data.map((item,i) => (
-                <div className="" key={i}>
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-3 py-2">
+              {data.map((item, i) => (
+                <div className="flex flex-col gap-3" key={i}>
                   <div className="">
-                    <>
-                      <div className="">
-                        <img src={item.png} alt="" />
-                      </div>
-                      <div className="">
-                        <p className="">
-                          {item.gridHeadingText}
-                        </p>
-                      </div>
-                      <div className="">
-                        <p className="">{item.gridPText}</p>
-                      </div>
-                    </>
+                    <img src={item.png} alt="" />
+                  </div>
+                  <div className="h-[5rem]">
+                    <p className="ff-f text-3xl ">{item.gridHeadingText}</p>
+                  </div>
+                  <div className="">
+                    <p className="ff-l text-2xl font-light">{item.gridPText}</p>
                   </div>
                 </div>
               ))}

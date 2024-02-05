@@ -3,8 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
   Pagination,
-  Mousewheel,
-  Keyboard,
   Autoplay,
 } from "swiper/modules";
 
@@ -38,23 +36,22 @@ function ForthSection() {
   ];
 
   return (
-    <section className="ForthSection py-7">
+    <section className="ForthSection py-7 bg-clrLightGray">
       <div className="custom_container">
         <div className="flex flex-col items-center justify-center py-7">
-          <h2 className="text-center ff-f py-4">Guest Experiences</h2>
-          <p className="w-[60%]">Explore the heartwarming stories and experiences of individuals who have journeyed with us to Mahavatar Babaji's Cave. Our guests recount transformative experiences, emphasizing the peace, spiritual insights, and serenity they encountered during their stay at Dunagiri Retreat.</p>
+          <h2 className="text-center ff-f py-4 lg:text-6xl text-3xl font-semibold text-clrDarkGreen">Guest Experiences</h2>
+          <p className="w-[70%] font-normal ff-l text-xl text-justify">Explore the heartwarming stories and experiences of individuals who have journeyed with us to Mahavatar Babaji's Cave. Our guests recount transformative experiences, emphasizing the peace, spiritual insights, and serenity they encountered during their stay at Dunagiri Retreat.</p>
         </div>
         <div className="container">
           <Swiper
             loop={true}
             navigation={true}
             pagination={true}
-            keyboard={true}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
-            modules={[Navigation, Pagination, Keyboard, Autoplay]}
+            modules={[Navigation, Pagination, Autoplay]}
             
           >
             {" "}
@@ -68,9 +65,10 @@ function ForthSection() {
                       alt="hero-img"
                     />
                   </div>
-                  <div className="bg-white absolute w-[35%] py-8 px-5 bottom-30 right-0">
-                    <p className="">{item.experience}</p>
-                    <p className="">
+                  <div className={`bg-white absolute w-[35%] py-8 px-5 bottom-3 ${i%2===0?'right-0':'left-0'}`}>
+                    <p className="lg:text-4xl font-medium ff-f mb-3">{item.experience}</p>
+                    <hr className="w-2rem text-[5rem]"/>
+                    <p className="text-2xl ff-f font-normal">
                       {item.name},{item.country}
                     </p>
                   </div>
