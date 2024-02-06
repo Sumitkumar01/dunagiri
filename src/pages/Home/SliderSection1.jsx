@@ -1,10 +1,11 @@
 import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
-import featurelogo from "../../assets/images/logo-cnntravel.webp";
-import featurelogo1 from "../../assets/images/307_Outlook_Traveller_edited.png";
-import featurelogo2 from "../../assets/images/pngwing_com.png";
+
+import featurelogo from "../../assets/images/cnntravel.webp";
+import featurelogo1 from "../../assets/images/Outlook.png";
+import featurelogo2 from "../../assets/images/pngwingcom.png";
 import { Link } from "react-router-dom";
 
 function SliderSection1(props) {
@@ -32,46 +33,35 @@ function SliderSection1(props) {
     },
   ];
   return (
-    <section className="py-6">
+    <section className="lg:py-7">
       <div className="custom_container">
-        <div className="flex items-center justify-center flex-col">
-          <h2>As Featured In</h2>
-          <Swiper
-            loop={true}
-            spaceBetween={30}
-            slidesPerView={1}
-            centeredSlides={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Autoplay, Pagination]}
-          >
-            {featureCardData.map((data, i) => {
-              return (
+        <div className="">
+          <h2 className="lg:text-6xl font-normal text-3xl text-center ff-f py-5">
+            As Featured In
+          </h2>
+          <div>
+            <Swiper
+              loop={true}
+              pagination={true}
+              slidesPerView={1}
+              spaceBetween={10}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Pagination, Autoplay]}
+            >
+              {featureCardData.map((item, i) => (
                 <SwiperSlide key={i}>
-                  <div className="w-full">
-                    <div className="flex flex-col justify-center items-center h-52">
-                      <div>
-                        <img src={data.imgUrl} alt="logo" />
-                      </div>
-                      <div>
-                        <h3>{data.heading}</h3>
-                      </div>
-                      <div>
-                        <Link to={data.link} className="">
-                          {data.linkText}
-                        </Link>
-                      </div>
-                    </div>
+                  <div className="h-[37vh] flex flex-col gap-3 justify-center items-center">
+                    <img src={item.imgUrl} alt="logo" className="text-center"/>
+                    <h3 className="lg:text-5xl text-2xl text-center ff-f font-normal">{item.heading}</h3>
+                    <Link to={item.link} className="lg:text-4xl text-xl text-center ff-f font-normal underline">{item.linkText}</Link>
                   </div>
                 </SwiperSlide>
-              );
-            })}
-          </Swiper>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>

@@ -54,11 +54,11 @@ function FifthSection() {
           style={{ backgroundImage: `url(${item.imgUrl})` }}
         >
           <div
-            className={`custom_container flex justify-${
+            className={`custom_container w-full lg:flex justify-${
               i % 2 === 0 ? "start" : "end"
             }`}
           >
-            <div className="lg:w-[70%] bg-clrWhite py-8 lg:px-28 md:px-24 px-5 flex flex-col gap-7 ">
+            <div className="lg:w-[70%] w-full bg-clrWhite py-8 lg:px-28 md:px-24 px-5 flex flex-col gap-7 ">
               <h3 className="lg:text-5xl text-2xl ff-f font-normal text-clrDarkGreen">
                 {i + 1}. {item.heading}
               </h3>
