@@ -36,7 +36,7 @@ function ChoosePathSection() {
           <div className="grid lg:grid-cols-2 gap-4">
             {cpData.map((item, i) => (
               <div className="flex flex-col gap-5 p-2" key={i}>
-                <div className="">
+                <div className="flex justify-center lg:justify-start">
                   <img src={item.img} className="rounded-full" alt="" />
                 </div>
                 <div className="">

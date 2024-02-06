@@ -36,11 +36,11 @@ function ForthSection() {
   ];
 
   return (
-    <section className="ForthSection py-7 bg-clrLightGray">
+    <section className="ForthSection lg:py-7 bg-clrLightGray">
       <div className="custom_container">
         <div className="flex flex-col items-center justify-center py-7">
           <h2 className="text-center ff-f py-4 lg:text-6xl text-3xl font-semibold text-clrDarkGreen">Guest Experiences</h2>
-          <p className="w-[70%] font-normal ff-l text-xl text-justify">Explore the heartwarming stories and experiences of individuals who have journeyed with us to Mahavatar Babaji's Cave. Our guests recount transformative experiences, emphasizing the peace, spiritual insights, and serenity they encountered during their stay at Dunagiri Retreat.</p>
+          <p className="w-[min(95%,70rem)] font-normal ff-l text-xl text-justify">Explore the heartwarming stories and experiences of individuals who have journeyed with us to Mahavatar Babaji's Cave. Our guests recount transformative experiences, emphasizing the peace, spiritual insights, and serenity they encountered during their stay at Dunagiri Retreat.</p>
         </div>
         <div className="container">
           <Swiper
@@ -57,7 +57,7 @@ function ForthSection() {
             {" "}
             {data.map((item, i) => (
               <SwiperSlide key={i}>
-                <div className="flex w-full justify-around items-center relative">
+                <div className="flex w-full lg:flex-row  flex-col justify-around items-center lg:relative">
                   <div className="h-full ">
                     <img
                       src={item.imgurl}
@@ -65,11 +65,11 @@ function ForthSection() {
                       alt="hero-img"
                     />
                   </div>
-                  <div className={`bg-white absolute w-[35%] py-8 px-5 bottom-3 ${i%2===0?'right-0':'left-0'}`}>
+                  <div className={`bg-white lg:absolute lg:w-[35%] py-8 px-5 bottom-3 ${i%2===0?'right-0':'left-0'}`}>
                     <p className="lg:text-4xl font-medium ff-f mb-3">{item.experience}</p>
                     <hr className="w-2rem text-[5rem]"/>
                     <p className="text-2xl ff-f font-normal">
-                      {item.name},{item.country}
+                      {item.name}, {item.country}
                     </p>
                   </div>
                 </div>

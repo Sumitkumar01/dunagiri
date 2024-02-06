@@ -51,11 +51,11 @@ function AreUSection() {
   return (
     <section className="py-7">
       <div className="custom_container">
-        <div className="grid lg:grid-cols-3 gap-4">
-          <div className="">
+        <div className="lg:grid lg:grid-cols-3 gap-4">
+          <div className="w-full">
             <img
               src={WowImageAreYou}
-              className="h-full"
+              className="w-full h-full"
               alt="WowImageAreYou"
             />
           </div>
@@ -76,11 +76,11 @@ function AreUSection() {
                   <div className="">
                     <img src={item.png} alt="" />
                   </div>
-                  <div className="h-[5rem]">
-                    <p className="ff-f text-3xl ">{item.gridHeadingText}</p>
+                  <div className="">
+                    <p className="ff-f text-2xl ">{item.gridHeadingText}</p>
                   </div>
                   <div className="">
-                    <p className="ff-l text-2xl font-light">{item.gridPText}</p>
+                    <p className="ff-l text-xl font-light text-justify">{item.gridPText}</p>
                   </div>
                 </div>
               ))}

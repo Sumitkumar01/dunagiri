@@ -7,17 +7,17 @@ function FifthSection() {
   const data = [
     {
       imgUrl: img,
-      heading: "Elevated Living",
+      heading: "Elevated Living.",
       description: `A "playground of well-being" nestled in the heart of the Himalayas, Dunagiri Retreat is devoted entirely to wellbeing. The campus offers a vast array of accommodations, yoga halls, meditation rooms, and experiences, such as hikes, yoga, sound healing, wilderness exploration, and more. `,
     },
     {
       imgUrl: img1,
-      heading: "Farm-Fresh Meals",
+      heading: "Farm-Fresh Meals.",
       description: `Nourish your body with clean, locally sourced vegan meals developed by our local Chef. Our light and savory meals are included (at no extra charge) with each stay and are specially designed using Ayurvedic principles to support the multi-step detoxification process so you can leave feeling better than ever.`,
     },
     {
       imgUrl: img2,
-      heading: "Yoga & Meditation",
+      heading: "Yoga & Meditation.",
       description: `Retreat leaders and participants get access to our main Yoga Hall, which can host up to 40 people, our Pyramid Meditation Hall, a capacity of 20 people, and Babaji Temple, a capacity of 20 people.`,
     },
   ];
@@ -43,14 +43,14 @@ function FifthSection() {
             teachers, healers, and spiritual practitioners to host retreats in a
             place where the essence of India's spiritual heritage is palpable,
             free from the distractions of everyday life. For more details,
-            please visit the <Link to="/">Retreats</Link> page.
+            please visit the <Link to="/" className="underline">Retreats</Link> page.
           </p>
         </div>
       </div>
       {data.map((item, i) => (
         <div
           key={i}
-          className="bg-cover border lg:flex items-end py-10 border-clrDarkGreen bg-current bg-no-repeat lg:h-[70vh] h-[80vh]"
+          className="bg-cover border lg:flex items-end py-10 border-clrDarkGreen bg-current bg-no-repeat lg:h-[70vh] md:h-[60vh] h-max"
           style={{ backgroundImage: `url(${item.imgUrl})` }}
         >
           <div
@@ -58,11 +58,11 @@ function FifthSection() {
               i % 2 === 0 ? "start" : "end"
             }`}
           >
-            <div className="lg:w-[70%] bg-clrWhite py-8 lg:px-28 md:px-24 px-14 flex flex-col gap-7">
+            <div className="lg:w-[70%] bg-clrWhite py-8 lg:px-28 md:px-24 px-5 flex flex-col gap-7 ">
               <h3 className="lg:text-5xl text-2xl ff-f font-normal text-clrDarkGreen">
                 {i + 1}. {item.heading}
               </h3>
-              <p className="text-lg font-normal ff-l">{item.description}</p>
+              <p className="text-lg font-normal ff-l text-justify">{item.description}</p>
               <div className="hover:border-b-clrLightGreen hover:border-b w-max pe-6">
                 <Link
                   to="#"

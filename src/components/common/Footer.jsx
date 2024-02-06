@@ -30,38 +30,38 @@ function Footer() {
       <div className="custom_container">
         <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-4">
           <div className="">
-            <h2 className="text-white text-lg font-medium ff-p">Contact Us</h2>
+            <h2 className="text-white text-xl font-medium ff-l">Contact Us</h2>
             <p className="text-white mb-1 ">
               TEL:{" "}
-              <Link to="tel:+919810267719" aria-label="Call us">
+              <Link to="tel:+919810267719" className="text-base ff-l font-normal" aria-label="Call us">
                 +91 98102 67719
               </Link>
             </p>
             <p className="text-white mb-1 ">
-              <Link to="tel:+919690132425" aria-label="Call us">
+              <Link to="tel:+919690132425" className="text-base ff-l font-normal" aria-label="Call us">
                 +91 96901 32425
               </Link>
             </p>
             <p className="text-white mb-1 ">
               WhatsApp:{" "}
-              <Link to="https://wa.me/919810267719" aria-label="WhatsApp">
+              <Link to="https://wa.me/919810267719" className="text-base ff-l font-normal" aria-label="WhatsApp">
                 +91 98102 67719
               </Link>
             </p>
             <p className="text-white mb-1 ">
               E-MAIL:{" "}
-              <Link to="mailto:delighted@dunagiri.com" aria-label="Email us">
+              <Link to="mailto:delighted@dunagiri.com" className="text-base ff-l font-normal" aria-label="Email us">
                 delighted@dunagiri.com
               </Link>
             </p>
           </div>
 
           <div className="">
-            <h3 className="text-white text-lg font-medium ff-p">Address</h3>
-            <p className="text-white mb-1 ">
+            <h3 className="text-white text-xl font-medium ff-l">Address</h3>
+            <p className="text-white mb-1 text-base ff-l font-normal">
               Village Chari, Near Mahavatar Babaji's Cave, PO Dunagiri,
             </p>
-            <p className="text-white mb-1 ">
+            <p className="text-white mb-1 text-base ff-l font-normal">
               Block Dwarahat, District Almora Uttarakhand, India{" "}
             </p>
           </div>
@@ -110,14 +110,14 @@ function Footer() {
           <ul className="lg:flex justify-between">
             {linkData.map((item, i) => (
               <li className="list-none" key={i}>
-                <Link to="/" className="text-clrWhite underline text-lg font-medium ff-p">
+                <Link to="/" className="text-clrWhite underline text-xl font-medium ff-l">
                   {item.name}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-        <div className="py-6">
+        <div className="pt-6">
           <p className="text-center text-white  text-lg font-medium ff-p">© 2023 by DUNAGIRI RETREAT </p>
         </div>
       </div>
