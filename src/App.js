@@ -1,9 +1,8 @@
-import "./App.css";
+import "./App.scss";
 import Navbar from "./components/Header/Navbar";
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Home/Homepage";
 import Footer from "./components/common/Footer";
-
 
 function App() {
   return (
@@ -23,7 +22,7 @@ function App() {
         <Route path="/selfguided-page" exact element={<SelfGuidedPage/>} />
         <Route path="/terms" exact element={<Terms/>} /> */}
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
