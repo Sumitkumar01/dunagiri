@@ -46,7 +46,7 @@ function Footer() {
         </div>
         <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-4">
           <div className="">
-            <h2 className="text-white text-xl font-medium ff-l">Contact Us</h2>
+            <h2 className="text-white text-xl font-semibold ff-l">Contact Us</h2>
             <p className="text-white mb-1 ">
               TEL:{" "}
               <Link
@@ -89,7 +89,7 @@ function Footer() {
           </div>
 
           <div className="">
-            <h3 className="text-white text-xl font-medium ff-l">Address</h3>
+            <h3 className="text-white text-xl font-semibold ff-l">Address</h3>
             <p className="text-white mb-1 text-base ff-l font-normal">
               Village Chari, Near Mahavatar Babaji's Cave, PO Dunagiri,
             </p>
@@ -100,7 +100,7 @@ function Footer() {
           <div className="flex lg:justify-end w-full">
             <div className="lg:w-[80%]">
               <div className="">
-                <h3 className="text-white text-lg font-medium ff-p">
+                <h3 className="text-white text-lg font-semibold ff-p">
                   Follow Us
                 </h3>
                 <ul className="flex gap-4 py-3">
@@ -120,7 +120,7 @@ function Footer() {
                 </ul>
               </div>
               <div className="">
-                <h3 className="text-white text-lg font-medium ff-p">
+                <h3 className="text-white text-lg font-semibold ff-p">
                   We Accept
                 </h3>
                 <div className="flex gap-4 py-3">
