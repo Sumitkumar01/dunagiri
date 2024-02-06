@@ -1,7 +1,7 @@
 header {
     nav {
-        ul {
-            li {
+        .desktop-ul {
+            .desktop-li {
                 border-top: 3px solid rgb(71, 71, 71);
                 padding: 0.2rem 1rem;
                 cursor: pointer;
@@ -24,8 +24,8 @@ header {
                 >div {
                     display: none;
                     position: absolute;
-                    top: 100%;
-                    left: -60%;
+                    top: 2.2rem;
+                    right: -50%;
                     min-width: 200px;
                     background-color: rgba(233, 229, 229, 0.622);
 
