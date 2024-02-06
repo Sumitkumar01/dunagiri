@@ -56,17 +56,19 @@ function AreUSection() {
             <img
               src={WowImageAreYou}
               className="w-full h-full"
+              width={'100%'}
+              height={'100%'}
               alt="WowImageAreYou"
             />
           </div>
           <div className="col-span-2">
             <div className="py-3">
-              <p className="uppercase ff-l font-light text-3xl">
+              <p className="uppercase ff-l font-light text-2xl">
                 {pheadingText}
               </p>
             </div>
             <div className="py-3">
-              <h2 className="lg:text-5xl text-3xl font-medium text-clrLightGreen ff-f">
+              <h2 className="lg:text-4xl text-3xl font-medium text-clrLightGreen ff-f">
                 {headingText}
               </h2>
             </div>
@@ -77,10 +79,10 @@ function AreUSection() {
                     <img src={item.png} alt="" />
                   </div>
                   <div className="">
-                    <p className="ff-f text-2xl ">{item.gridHeadingText}</p>
+                    <p className="ff-f text-xl font-normal text-clrDarkGreen">{item.gridHeadingText}</p>
                   </div>
                   <div className="">
-                    <p className="ff-l text-xl font-light text-justify">{item.gridPText}</p>
+                    <p className="ff-l text-lg font-light text-justify">{item.gridPText}</p>
                   </div>
                 </div>
               ))}

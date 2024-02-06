@@ -53,9 +53,9 @@ function SliderSection1(props) {
             >
               {featureCardData.map((item, i) => (
                 <SwiperSlide key={i}>
-                  <div className="h-[37vh] flex flex-col gap-3 justify-center items-center">
+                  <div className="h-[39vh] flex flex-col gap-3 justify-center items-center">
                     <img src={item.imgUrl} alt="logo" className="text-center"/>
-                    <h3 className="lg:text-5xl text-2xl text-center ff-f font-normal">{item.heading}</h3>
+                    <h3 className="lg:text-4xl text-2xl text-center ff-f font-normal">{item.heading}</h3>
                     <Link to={item.link} className="lg:text-4xl text-xl text-center ff-f font-normal underline">{item.linkText}</Link>
                   </div>
                 </SwiperSlide>

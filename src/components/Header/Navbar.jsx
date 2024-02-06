@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/images/asset0.png";
 import mobLogo from "../../assets/images/MobileLogo.png";
 import { IoCallOutline } from "react-icons/io5";
+import { FaCaretDown } from "react-icons/fa";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -69,13 +70,14 @@ function Navbar() {
           }}
         >
           <li className="flex justify-end">
+          <span className="sr-only">menu</span>
             <FaTimes
               className="text-3xl text-clrDarkGreen font-normal"
               onClick={handleClick}
             />
           </li>
           {Nav_Lists.map((links, i) => {
-            return <LiDrop links={links} />;
+            return <LiDrop links={links} key={i} handleClick={handleClick}/>;
           })}
         </ul>
       </nav>
@@ -85,23 +87,25 @@ function Navbar() {
 
 export default Navbar;
 
-const LiDrop = ({ links }) => {
+const LiDrop = ({ links,handleClick }) => {
   const [drop, setDrop] = useState(false);
 
   return (
     <li>
       <Link
         to="/"
-        className="capitalize text-xl font-normal border-0 flex justify-between"
+        className="capitalize text-2xl font-normal border-0 flex justify-start active:text-clrLightGreen hover:text-clrLightGreen"
+        onClick={handleClick}
       >
         {links.linkName}{" "}
         {links.subMenu && (
           <span
+          className="w-5rem"
             onClick={() => {
               setDrop(!drop);
             }}
           >
-            icon
+            {/* <FaCaretDown/> */}
           </span>
         )}
       </Link>
@@ -116,7 +120,7 @@ const LiDrop = ({ links }) => {
           {links?.subMenu?.map((sub, i) => {
             return (
               <li key={i}>
-                <NavLink to={sub.src} className="top-10">
+                <NavLink to={sub.src} className="top-10 ">
                   {sub.linkName}
                 </NavLink>
               </li>

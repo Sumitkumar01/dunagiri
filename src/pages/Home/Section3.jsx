@@ -20,7 +20,7 @@ const Section3 = () => {
           <div className="lg:grid lg:grid-cols-5 gap-4">
             <div className="col-span-3 ">
               <div className="flex flex-col gap-4 justify-center h-full">
-                <h2 className="lg:text-5xl text-3xl font-semibold ff-f text-clrDarkGreen">
+                <h2 className="lg:text-4xl text-3xl font-normal ff-f text-clrDarkGreen">
                   Meet Our Founder <br />
                   Piyush Kumar
                 </h2>
@@ -52,7 +52,7 @@ const Section3 = () => {
                 <div className="my-4 w-full">
                   <Link
                     to="/"
-                    className="text-clrWhite bg-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite border-clrLightGreen border text-center py-2 px-7 uppercase"
+                    className="text-clrWhite text-xl bg-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite border-clrLightGreen border text-center py-2 px-7 uppercase"
                   >
                     about us
                   </Link>

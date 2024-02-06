@@ -4,22 +4,22 @@ const Nav_Lists = [
     src: "/",
   },
   {
-    linkName: "Accomondation",
+    linkName: "Accommodation",
     src: "/",
   },
   {
     linkName: "Retreats",
     src: "/",
-    subMenu: [
-      {linkName:"self guide exploration",src:'/'},
-    ],
+    // subMenu: [
+    //   {linkName:"self guide exploration",src:'/'},
+    // ],
   },
   {
     linkName: "Activities",
     src: "/",
   },
   {
-    linkName: "Gallary",
+    linkName: "Gallery",
     src: "/",
   },
   {

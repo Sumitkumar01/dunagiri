@@ -19,7 +19,7 @@ function ARSoul() {
     <section className="py-7 bg-clrLightGray">
       <div className="custom_container">
       <div className="">
-        <h2 className="lg:text-5xl text-3xl ff-f text-center">{heading}</h2>
+        <h2 className="lg:text-4xl font-normal text-2xl ff-f text-center">{heading}</h2>
       </div>
       <div className="mt-3">
         {arsoulText.map((item, i) => (
@@ -29,7 +29,7 @@ function ARSoul() {
         ))}
       </div>
       <div className="w-full text-center mt-5">
-        <Link to="/" className="text-sm text-center py-2 px-9 uppercase bg-clrLightGreen text-clrWhite border border-clrLightGreen hover:bg-clrWhite hover:text-clrLightGreen">about us</Link>
+        <Link to="/" className="text-base text-center py-2 px-9 uppercase bg-clrLightGreen text-clrWhite border border-clrLightGreen hover:bg-clrWhite hover:text-clrLightGreen">about us</Link>
       </div>
       </div>
     </section>

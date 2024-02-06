@@ -26,7 +26,7 @@ function FifthSection() {
     <section className="fifth-Section">
       <div className="py-7 bg-clrDarkGreen">
         <div className="custom_container">
-          <h2 className="capitalize lg:text-5xl text-3xl ff-f  text-clrWhite font-semibold text-center py-6">
+          <h2 className="capitalize lg:text-4xl text-3xl ff-f  text-clrWhite font-normal text-center py-6">
             Why Choose Us
           </h2>
 
@@ -59,7 +59,7 @@ function FifthSection() {
             }`}
           >
             <div className="lg:w-[70%] w-full bg-clrWhite py-8 lg:px-28 md:px-24 px-5 flex flex-col gap-7 ">
-              <h3 className="lg:text-5xl text-2xl ff-f font-normal text-clrDarkGreen">
+              <h3 className="lg:text-4xl text-xl ff-f font-normal text-clrDarkGreen">
                 {i + 1}. {item.heading}
               </h3>
               <p className="text-lg font-normal ff-l text-justify">{item.description}</p>

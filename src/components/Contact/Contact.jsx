@@ -41,7 +41,7 @@ function Contact() {
         <div className="flex flex-col gap-5 lg:mb-0 mb-3">
           <div>
             <h2
-              className="capitalize lg:text-5xl text-3xl ff-f font-medium"
+              className="capitalize lg:text-4xl text-3xl ff-f font-normal"
               id="contact"
             >
               Contact us
@@ -190,6 +190,7 @@ function Contact() {
             allowFullScreen=""
             // loading="lazy"
             loading="async"
+            
             className="w-full h-full"
             referrerPolicy="no-referrer-when-downgrade"
           />

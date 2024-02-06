@@ -107,7 +107,7 @@ function Testimonials() {
   return (
     <section className="py-7">
       <div className="custom_container">
-        <h2 className="text-3xl text-center font-normal text-clrDarkGreen ff-f capitalize">
+        <h2 className="lg:text-4xl text-3xl text-center font-normal text-clrDarkGreen ff-f capitalize">
           Dunagiri Retreat Blog
         </h2>
         <div>
