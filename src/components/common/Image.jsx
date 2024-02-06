@@ -1,27 +1,35 @@
 import React from "react";
 
-function Image() {
+function Image({
+  src,
+  dataSrc,
+  className,
+  alt,
+  src855w,
+  src300w,
+  src768w,
+  src600w,
+  srcSet855w,
+  srcSet300w,
+  srcSet768w,
+  srcSet600w,
+}) {
   return (
     <>
       <img
+        loading="lazy"
         decoding="async"
-        width={855}
-        height={473}
-        src="https://fielmente.com/wp-content/uploads/2023/07/Sachin.png"
-        data-src="https://fielmente.com/wp-content/uploads/2023/07/Sachin.png"
-        className="lazy attachment-large size-large wp-image-11108 entered loaded two_elementor_element"
-        alt="Fielmente"
-        data-srcset="https://fielmente.com/wp-content/uploads/2023/07/Sachin.png 855w,
-https://fielmente.com/wp-content/uploads/2023/07/Sachin-300x166.png 300w,
-https://fielmente.com/wp-content/uploads/2023/07/Sachin-768x425.png 768w,
-https://fielmente.com/wp-content/uploads/2023/07/Sachin-600x332.png 600w"
-        data-sizes="(max-width: 855px) 100vw, 855px"
-        data-ll-status="loaded"
-        sizes="(max-width: 855px) 100vw, 855px"
-        srcSet="https://fielmente.com/wp-content/uploads/2023/07/Sachin.png 855w,
-https://fielmente.com/wp-content/uploads/2023/07/Sachin-300x166.png 300w,
-https://fielmente.com/wp-content/uploads/2023/07/Sachin-768x425.png 768w,
-https://fielmente.com/wp-content/uploads/2023/07/Sachin-600x332.png 600w"
+        // width={855}
+        // height={473}
+        src={src}
+        // data-src={dataSrc}
+        className={className}
+        alt={alt}
+        // data-srcset={`${src855w} 855w,${src300w} 300w,${src768w}768w,${src600w}600w`}
+        // data-sizes="(max-width: 855px) 100vw, 855px"
+        // data-ll-status="loaded"
+        // sizes="(max-width: 855px) 100vw, 855px"
+        // srcSet={`${srcSet855w}855w,${srcSet300w}300w,${srcSet768w} 768w,${srcSet600w}600w`}
       />
     </>
   );

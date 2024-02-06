@@ -26,7 +26,7 @@ function FifthSection() {
     <section className="fifth-Section">
       <div className="py-7 bg-clrDarkGreen">
         <div className="custom_container">
-          <h2 className="capitalize lg:text-6xl text-3xl ff-f  text-clrWhite font-semibold text-center py-6">
+          <h2 className="capitalize lg:text-5xl text-3xl ff-f  text-clrWhite font-semibold text-center py-6">
             Why Choose Us
           </h2>
 

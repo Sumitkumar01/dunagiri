@@ -66,7 +66,7 @@ function AreUSection() {
               </p>
             </div>
             <div className="py-3">
-              <h2 className="lg:text-6xl text-3xl font-medium text-clrLightGreen ff-f">
+              <h2 className="lg:text-5xl text-3xl font-medium text-clrLightGreen ff-f">
                 {headingText}
               </h2>
             </div>

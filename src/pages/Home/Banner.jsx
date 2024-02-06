@@ -10,7 +10,7 @@ function Banner() {
         style={{ backgroundImage: `url(${bannerImg})` }}
       >
         <div className="flex items-center flex-col justify-center py-5 bg-[rgba(0,0,0,.4)] w-[min(90%,50rem)] ">
-          <h1 className="lg:text-6xl text-3xl font-normal text-clrWhite capitalize mb-3 ff-f">
+          <h1 className="lg:text-5xl text-3xl font-normal text-clrWhite capitalize mb-3 ff-f">
             Dunagiri Yoga & <br/> spiritual retreats
           </h1>
           <p className="lg:text-3xl text-lg text-center font-normal text-clrWhite mb-3 ff-l">Embark on a journey to Mahavatar Babaji's Cave.</p>

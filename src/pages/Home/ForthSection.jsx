@@ -39,7 +39,7 @@ function ForthSection() {
     <section className="ForthSection lg:py-7 bg-clrLightGray">
       <div className="custom_container">
         <div className="flex flex-col items-center justify-center py-7">
-          <h2 className="text-center ff-f py-4 lg:text-6xl text-3xl font-semibold text-clrDarkGreen">Guest Experiences</h2>
+          <h2 className="text-center ff-f py-4 lg:text-5xl text-3xl font-semibold text-clrDarkGreen">Guest Experiences</h2>
           <p className="w-[min(95%,70rem)] font-normal ff-l text-xl text-justify">Explore the heartwarming stories and experiences of individuals who have journeyed with us to Mahavatar Babaji's Cave. Our guests recount transformative experiences, emphasizing the peace, spiritual insights, and serenity they encountered during their stay at Dunagiri Retreat.</p>
         </div>
         <div className="container">

@@ -144,7 +144,7 @@ function Footer() {
           </div>
         </div>
         <div className="py-3">
-          <ul className="lg:flex justify-between">
+          <ul className="lg:flex justify-center gap-12">
             {linkData.map((item, i) => (
               <li className="list-none" key={i}>
                 <Link

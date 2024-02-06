@@ -36,7 +36,7 @@ function SliderSection1(props) {
     <section className="lg:py-7">
       <div className="custom_container">
         <div className="">
-          <h2 className="lg:text-6xl font-normal text-3xl text-center ff-f py-5">
+          <h2 className="lg:text-5xl font-normal text-3xl text-center ff-f py-5">
             As Featured In
           </h2>
           <div>

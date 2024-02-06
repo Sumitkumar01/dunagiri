@@ -1,5 +1,5 @@
 import React from "react";
-import founderImg from "../../assets/images/founderimg.webp";
+import founderImg from "../../assets/images/founderimg.avif";
 import { Link } from "react-router-dom";
 
 import { FaFacebook } from "react-icons/fa";
@@ -20,7 +20,7 @@ const Section3 = () => {
           <div className="lg:grid lg:grid-cols-5 gap-4">
             <div className="col-span-3 ">
               <div className="flex flex-col gap-4 justify-center h-full">
-                <h2 className="lg:text-6xl text-3xl font-semibold ff-f text-clrDarkGreen">
+                <h2 className="lg:text-5xl text-3xl font-semibold ff-f text-clrDarkGreen">
                   Meet Our Founder <br />
                   Piyush Kumar
                 </h2>

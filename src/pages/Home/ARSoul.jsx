@@ -19,7 +19,7 @@ function ARSoul() {
     <section className="py-7 bg-clrLightGray">
       <div className="custom_container">
       <div className="">
-        <h2 className="lg:text-6xl text-3xl ff-f text-center">{heading}</h2>
+        <h2 className="lg:text-5xl text-3xl ff-f text-center">{heading}</h2>
       </div>
       <div className="mt-3">
         {arsoulText.map((item, i) => (

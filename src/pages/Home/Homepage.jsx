@@ -11,26 +11,36 @@ import ForthSection from "./ForthSection";
 import FifthSection from "./FifthSection";
 import Section3 from "./Section3";
 import Testimonials from "./Testimonials";
-// import Section2 from "./Section2";
+import {Helmet} from "react-helmet"
+import Section2 from "./Section2";
 
 function homepage() {
   return (
     <>
+      <Helmet>
+        <title>
+          Dunagiri Retreat | Yoga Retreat Near Mahavatar Babaji's Cave
+        </title>
+        <meta
+          name="description"
+          content="Dunagiri Retreat, located near Babaji's Cave in the Himalayas – renowned as the birthplace of Yoga – is a holistic institute and boutique hotel focused on yoga, spiritual healing, and wellness."
+        />
+      </Helmet>
       <header>
         <Banner />
       </header>
       <main>
         <SliderSection1 />
-        <ARSoul/>
-        <Section1/>
-        <AreUSection/>
-        <GuestsExperience/>
-        <ChoosePathSection/>
-        {/* <Section2/> */}
-        <ForthSection/>
-        <FifthSection/>
-        <Section3/>
-        <Testimonials/>
+        <ARSoul />
+        <Section1 />
+        <AreUSection />
+        <GuestsExperience />
+        <ChoosePathSection />
+        <Section2/>
+        <ForthSection />
+        <FifthSection />
+        <Section3 />
+        <Testimonials />
         <Contact />
       </main>
     </>

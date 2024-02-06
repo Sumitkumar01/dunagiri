@@ -1,6 +1,6 @@
 import React from "react";
 import CpImg1 from "../../assets/images/CpImg1.png";
-import CpImg2 from "../../assets/images/CpImg2.png";
+import CpImg2 from "../../assets/images/CpImg2.avif";
 import { Link } from "react-router-dom";
 
 function ChoosePathSection() {
@@ -27,7 +27,7 @@ function ChoosePathSection() {
     <section className="bg-clrLightOrange py-7">
       <div className="custom_container">
         <div className="py-3">
-          <h2 className="ff-f lg:text-6xl text-3xl text-center text-clrDarkGreen">{cpHeading}</h2>
+          <h2 className="ff-f lg:text-5xl text-3xl text-center text-clrDarkGreen">{cpHeading}</h2>
         </div>
         <div className="py-3">
           <p className="text-center ff-l lg:text-xl text-base font-normal">{cphText}</p>
@@ -40,7 +40,7 @@ function ChoosePathSection() {
                   <img src={item.img} className="rounded-full" alt="" />
                 </div>
                 <div className="">
-                  <h3 className="ff-f lg:text-6xl text-3xl text-clrDarkGreen">{item.hText}</h3>
+                  <h3 className="ff-f lg:text-5xl text-3xl text-clrDarkGreen">{item.hText}</h3>
                 </div>
                 <div className="">
                   <p className="text-justify text-center ff-l lg:text-xl text-base font-normal">{item.pText}</p>
