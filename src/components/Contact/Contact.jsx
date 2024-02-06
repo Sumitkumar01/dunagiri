@@ -38,10 +38,10 @@ function Contact() {
       <div className="lg:grid =  lg:grid-cols-3  custom_container gap-2">
         {/* -------------------------------contact details-------------------------------------- */}
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-5 lg:mb-0 mb-3">
           <div>
             <h2
-              className="capitalize lg:text-5xl ff-f font-medium"
+              className="capitalize lg:text-5xl text-3xl ff-f font-medium"
               id="contact"
             >
               Contact us
@@ -92,7 +92,7 @@ function Contact() {
               <div>
                 <label
                   htmlFor="f-name"
-                  className="capitalize text-xl ff-l font-normal text-clrDarkGreen"
+                  className="capitalize lg:text-xl text-lg ff-l font-normal text-clrDarkGreen"
                 >
                   first name
                 </label>
@@ -108,7 +108,7 @@ function Contact() {
               <div>
                 <label
                   htmlFor="l-name"
-                  className="capitalize text-xl ff-l font-normal text-clrDarkGreen"
+                  className="capitalize lg:text-xl text-lg ff-l font-normal text-clrDarkGreen"
                 >
                   last name
                 </label>
@@ -124,7 +124,7 @@ function Contact() {
               <div>
                 <label
                   htmlFor="email"
-                  className="capitalize text-xl ff-l font-normal text-clrDarkGreen"
+                  className="capitalize lg:text-xl text-lg ff-l font-normal text-clrDarkGreen"
                 >
                   email*
                 </label>
@@ -140,7 +140,7 @@ function Contact() {
               <div>
                 <label
                   htmlFor="phone"
-                  className="capitalize text-xl ff-l font-normal text-clrDarkGreen"
+                  className="capitalize lg:text-xl text-lg ff-l font-normal text-clrDarkGreen"
                 >
                   phone
                 </label>
@@ -155,7 +155,7 @@ function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="capitalize text-xl ff-l font-normal text-clrDarkGreen"
+                  className="capitalize lg:text-xl text-lg ff-l font-normal text-clrDarkGreen"
                 >
                   message
                 </label>
