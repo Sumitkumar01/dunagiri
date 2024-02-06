@@ -1,7 +1,18 @@
 import React from "react";
 import founderImg from "../../assets/images/founderimg.webp";
 import { Link } from "react-router-dom";
+
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 const Section3 = () => {
+  const socialContact = [
+    { title: "Facebook", icon: <FaFacebook />, link: "" },
+    { title: "InstagramSquare", icon: <FaInstagramSquare />, link: "" },
+    { title: "Linkedin", icon: <FaLinkedin />, link: "" },
+  ];
+
   return (
     <>
       <section className="py-7 bg-clrLightGray">
@@ -28,21 +39,20 @@ const Section3 = () => {
                   Yoga, this mystical site offers a transformative experience.
                   Embark your journey to a spiritual awakening.
                 </p>
-                <div className="social-icons">
-                  <Link className="social-link">
-                    <i className="fa-brands fa-linkedin-in"></i>
-                  </Link>
-                  <Link className="social-link">
-                    <i className="fa-brands fa-instagram"></i>
-                  </Link>
-                  <Link className="social-link">
-                    <i className="fa-brands fa-facebook"></i>
-                  </Link>
-                </div>
+                <ul className="flex gap-4 justify-stretch">
+                  {socialContact.map((item, i) => (
+                    <li key={i}>
+                      <Link to={item.link} className="text-3xl ">
+                        <span className="sr-only">{item.title}</span>
+                        {item.icon}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
                 <div className="my-4 w-full">
                   <Link
                     to="/"
-                    className="text-clrWhite bg-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite border-clrLightGreen border text-center py-2 px-5 uppercase"
+                    className="text-clrWhite bg-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite border-clrLightGreen border text-center py-2 px-7 uppercase"
                   >
                     about us
                   </Link>

@@ -47,17 +47,17 @@ function Contact() {
               Contact us
             </h2>
           </div>
-          <div className="flex items-start justify-start gap-3 text-lg">
+          <div className="flex items-start justify-start gap-3 mt-5">
             <span className="sr-only">location</span>
             <span className="pt-2">
               <IoLocationOutline />
             </span>
-            <p>
+            <p className="font-normal text-black text-lg">
               Dunagiri Retreat, Village Chari, Near Mahavatar Babaji's Cave,
               Block, Dwarahat, Uttarakhand 263653 India
             </p>
           </div>
-          <ul>
+          <ul className="flex flex-col gap-3">
             {contactData.map((item, i) => (
               <li key={i}>
                 <Link
@@ -70,10 +70,13 @@ function Contact() {
             ))}
           </ul>
           <ul className="flex gap-3 justify-stretch">
-            {socialContact.map((item,i)=>(
+            {socialContact.map((item, i) => (
               <li key={i}>
-                <span className="sr-only">{item.title}</span>
-                <Link to={item.link} className="text-3xl">{item.icon}</Link>
+                <Link to={item.link} className="text-3xl">
+                  <span className="sr-only">{item.title}</span>
+
+                  {item.icon}
+                </Link>
               </li>
             ))}
           </ul>
