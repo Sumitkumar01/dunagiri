@@ -16,7 +16,7 @@ function ARSoul() {
     },
   ];
   return (
-    <section className="py-7">
+    <section className="py-7 bg-clrLightGray">
       <div className="custom_container">
       <div className="">
         <h2 className="lg:text-6xl text-3xl ff-f text-center">{heading}</h2>
@@ -29,7 +29,7 @@ function ARSoul() {
         ))}
       </div>
       <div className="w-full text-center mt-5">
-        <Link to="/" className="text-sm text-center py-2 px-7 uppercase bg-clrLightGreen text-clrWhite border border-clrLightGreen hover:bg-clrWhite hover:text-clrLightGreen">about us</Link>
+        <Link to="/" className="text-sm text-center py-2 px-9 uppercase bg-clrLightGreen text-clrWhite border border-clrLightGreen hover:bg-clrWhite hover:text-clrLightGreen">about us</Link>
       </div>
       </div>
     </section>

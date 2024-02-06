@@ -3,6 +3,9 @@ import Nav_Lists from "./Nav_List";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from '../../assets/images/asset0.png'
+import mobLogo from '../../assets/images/MobileLogo.png'
+import { IoCallOutline } from "react-icons/io5";
+
 function Navbar() {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
@@ -11,10 +14,14 @@ function Navbar() {
   };
   return (
     <header className="bg-white py-5">
-      <nav className="custom_container mx-auto flex justify-center gap-10">
+      <nav className="custom_container mx-auto flex justify-around lg:justify-center gap-10">
+        <Link to="tel:+" className="lg:hidden  flex items-center justify-center ">
+          <span className="sr-only">call</span>
+          <IoCallOutline className="text-4xl text-clrLightGreen"/>
+        </Link>
         <Link to="/" className="logo-image-containter">
-          <img src={logo} alt="logo" />
-          
+          <img src={logo} alt="logo" className="lg:block hidden"/>
+          <img src={mobLogo} alt="logo" className="lg:hidden block"/>
         </Link>
         <ul className="lg:flex gap-5 hidden">
           {Nav_Lists.map((links,i) => {

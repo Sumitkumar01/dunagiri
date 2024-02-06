@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "./Banner";
 import Contact from "../../components/Contact/Contact";
-// import SliderSection1 from "./SliderSection1";
+import SliderSection1 from "./SliderSection1";
 import ARSoul from "./ARSoul";
 import Section1 from "./Section1";
 import AreUSection from "./AreUSection";
@@ -20,7 +20,7 @@ function homepage() {
         <Banner />
       </header>
       <main>
-        {/* <SliderSection1 /> */}
+        <SliderSection1 />
         <ARSoul/>
         <Section1/>
         <AreUSection/>
