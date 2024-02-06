@@ -28,29 +28,61 @@ function Footer() {
   return (
     <section className="footer-section bg-clrDarkGreen py-7">
       <div className="custom_container">
+        <div className="py-4">
+          <p className="text-xl ff-l font-normal text-clrWhite py-4 text-justify">
+            For more information or to plan your visit to{" "}
+            <strong className="font-bold">Mahavatar Babaji's Cave</strong>, please contact us via
+            Whatsapp at{" "}
+            <Link to="https://wa.me/9810267719" target="_blank">
+              09810267719
+            </Link>
+            .
+          </p>
+          <p className="text-xl ff-l font-normal text-clrWhite text-justify">
+            Embrace a transformative experience, attend a yoga retreat, or find
+            your escape in the heart of the Himalayas at{" "}
+            <strong className="font-bold">Dunagiri Retreat</strong>.
+          </p>
+        </div>
         <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-4">
           <div className="">
             <h2 className="text-white text-xl font-medium ff-l">Contact Us</h2>
             <p className="text-white mb-1 ">
               TEL:{" "}
-              <Link to="tel:+919810267719" className="text-base ff-l font-normal" aria-label="Call us">
+              <Link
+                to="tel:+919810267719"
+                className="text-base ff-l font-normal"
+                aria-label="Call us"
+              >
                 +91 98102 67719
               </Link>
             </p>
             <p className="text-white mb-1 ">
-              <Link to="tel:+919690132425" className="text-base ff-l font-normal" aria-label="Call us">
+              <Link
+                to="tel:+919690132425"
+                className="text-base ff-l font-normal"
+                aria-label="Call us"
+              >
                 +91 96901 32425
               </Link>
             </p>
             <p className="text-white mb-1 ">
               WhatsApp:{" "}
-              <Link to="https://wa.me/919810267719" className="text-base ff-l font-normal" aria-label="WhatsApp">
+              <Link
+                to="https://wa.me/919810267719"
+                className="text-base ff-l font-normal"
+                aria-label="WhatsApp"
+              >
                 +91 98102 67719
               </Link>
             </p>
             <p className="text-white mb-1 ">
               E-MAIL:{" "}
-              <Link to="mailto:delighted@dunagiri.com" className="text-base ff-l font-normal" aria-label="Email us">
+              <Link
+                to="mailto:delighted@dunagiri.com"
+                className="text-base ff-l font-normal"
+                aria-label="Email us"
+              >
                 delighted@dunagiri.com
               </Link>
             </p>
@@ -68,25 +100,30 @@ function Footer() {
           <div className="flex lg:justify-end w-full">
             <div className="lg:w-[80%]">
               <div className="">
-                <h3 className="text-white text-lg font-medium ff-p">Follow Us</h3>
+                <h3 className="text-white text-lg font-medium ff-p">
+                  Follow Us
+                </h3>
                 <ul className="flex gap-4 py-3">
                   {socialContact.map((item, i) => (
                     <li key={i}>
-                      <Link
-                        to={item.link}
-                        className=""
-                        target="_blank"
-                      >
-                        <img src={item.url} alt="log" width={36} height={36} aria-label="logo" />
+                      <Link to={item.link} className="" target="_blank">
+                        <img
+                          src={item.url}
+                          alt="log"
+                          width={36}
+                          height={36}
+                          aria-label="logo"
+                        />
                       </Link>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="">
-                <h3 className="text-white text-lg font-medium ff-p">We Accept</h3>
+                <h3 className="text-white text-lg font-medium ff-p">
+                  We Accept
+                </h3>
                 <div className="flex gap-4 py-3">
-
                   <img
                     src={PayPal}
                     className=""
@@ -110,7 +147,10 @@ function Footer() {
           <ul className="lg:flex justify-between">
             {linkData.map((item, i) => (
               <li className="list-none" key={i}>
-                <Link to="/" className="text-clrWhite underline text-xl font-medium ff-l">
+                <Link
+                  to="/"
+                  className="text-clrWhite underline text-xl font-medium ff-l"
+                >
                   {item.name}
                 </Link>
               </li>
@@ -118,7 +158,9 @@ function Footer() {
           </ul>
         </div>
         <div className="pt-6">
-          <p className="text-center text-white  text-lg font-medium ff-p">© 2023 by DUNAGIRI RETREAT </p>
+          <p className="text-center text-white  text-lg font-medium ff-p">
+            © 2023 by DUNAGIRI RETREAT{" "}
+          </p>
         </div>
       </div>
     </section>
