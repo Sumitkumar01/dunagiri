@@ -115,7 +115,7 @@ const Section2 = () => {
                   className="overflow-hidden"
                   onClick={() => {
                     setShow(true);
-                    setData(i);
+                    setData(item);
                   }}
                 >
                   <div
@@ -135,7 +135,7 @@ const Section2 = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          {setShow && <ImgPopup data={data}/>}
+          {show && <ImgPopup data={data} setShow={setShow}/>}
           <div className="text-center py-6">
             <Link
               to="/"
