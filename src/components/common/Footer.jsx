@@ -127,15 +127,15 @@ function Footer() {
                   <img
                     src={PayPal}
                     className=""
-                    width={55}
-                    height={55}
+                    width={49}
+                    height={26}
                     alt="PayPal"
                   />
                   <img
                     src={Razorpay}
                     className=""
-                    width={55}
-                    height={55}
+                    width={49}
+                    height={26}
                     alt="Razorpay"
                   />
                 </div>
