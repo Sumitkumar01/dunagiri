@@ -98,7 +98,7 @@ function Footer() {
             </p>
           </div>
           <div className=" flex lg:justify-end w-full lg:py-0 py-5">
-            <div className="lg:w-[80%] lg:block flex justify-start gap-9 w-full">
+            <div className="lg:w-[80%] lg:block flex flex-row-reverse justify-start gap-9 ">
               <div className="">
                 <h3 className="text-white text-lg font-semibold ff-op">
                   Follow Us
