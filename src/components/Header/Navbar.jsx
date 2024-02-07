@@ -62,7 +62,7 @@ function Navbar() {
 
       <nav className="">
         <ul
-          className="fixed w-full h-[100vh] bg-white px-2 py-5"
+          className="fixed w-[80%] h-[100vh] bg-white px-2 py-5"
           style={{
             top: 0,
             right: open ? "0" : "-100%",
@@ -70,7 +70,7 @@ function Navbar() {
             zIndex: "99999",
           }}
         >
-          <li className="flex justify-end">
+          <li className="flex justify-end p-4">
           <span className="sr-only">menu</span>
             <FaTimes
               className="text-3xl text-clrDarkGreen font-normal"
@@ -95,7 +95,7 @@ const LiDrop = ({ links,handleClick }) => {
     <li>
       <Link
         to="/"
-        className="capitalize text-2xl font-normal border-0 flex justify-start active:text-clrLightGreen hover:text-clrLightGreen"
+        className="uppercase text-2xl font-normal border-0 flex justify-start active:text-clrLightGreen hover:text-clrLightGreen py-5 px-6"
         onClick={handleClick}
       >
         {links.linkName}{" "}
