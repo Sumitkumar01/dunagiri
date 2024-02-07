@@ -1,5 +1,5 @@
 import React from "react";
-import bannerImg from "../../assets/images/bannerImg.jpeg";
+import bannerImg from "../../assets/images/bannerImg.avif";
 import { HashLink as Link } from "react-router-hash-link";
 
 function Banner() {
