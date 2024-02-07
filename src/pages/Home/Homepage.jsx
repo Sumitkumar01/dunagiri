@@ -34,7 +34,7 @@ function homepage() {
         <ARSoul />
         <Section1 />
         <AreUSection />
-        <GuestsExperience />
+        <GuestsExperience clas="lg:block hidden"/>
         <ChoosePathSection />
         <Section2/>
         <ForthSection />

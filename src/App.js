@@ -3,6 +3,7 @@ import Navbar from "./components/Header/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Home/Homepage";
 import Footer from "./components/common/Footer";
+import WhatsApp from "./components/common/WhatsApp";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/terms" exact element={<Terms/>} /> */}
       </Routes>
       <Footer />
+      <WhatsApp/>
     </div>
   );
 }

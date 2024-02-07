@@ -45,9 +45,9 @@ function Footer() {
           </p>
         </div>
         <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-4">
-          <div className="">
+          <div className="lg:py-0 py-5">
             <h2 className="text-white text-base font-semibold ff-op">Contact Us</h2>
-            <p className="text-white mb-1  text-base">
+            <p className="text-white mb-1  text-base leading-[1rem]">
               TEL:{" "}
               <Link
                 to="tel:+919810267719"
@@ -57,7 +57,7 @@ function Footer() {
                 +91 98102 67719
               </Link>
             </p>
-            <p className="text-white mb-1 text-base">
+            <p className="text-white mb-1 text-base leading-[1rem]">
               <Link
                 to="tel:+919690132425"
                 className="text-base ff-op font-normal"
@@ -66,7 +66,7 @@ function Footer() {
                 +91 96901 32425
               </Link>
             </p>
-            <p className="text-white mb-1 text-base">
+            <p className="text-white mb-1 text-base leading-[1rem]">
               WhatsApp:{" "}
               <Link
                 to="https://wa.me/919810267719"
@@ -76,7 +76,7 @@ function Footer() {
                 +91 98102 67719
               </Link>
             </p>
-            <p className="text-white mb-1 text-base">
+            <p className="text-white mb-1 text-base leading-[1rem]">
               E-MAIL:{" "}
               <Link
                 to="mailto:delighted@dunagiri.com"
@@ -88,22 +88,22 @@ function Footer() {
             </p>
           </div>
 
-          <div className="">
+          <div className="lg:py-0 py-5">
             <h3 className="text-white text-base font-semibold ff-op">Address</h3>
-            <p className="text-white mb-1 text-base ff-op font-normal">
+            <p className="text-white mb-1 text-base ff-op font-normal leading-[2rem]">
               Village Chari, Near Mahavatar Babaji's Cave, PO Dunagiri,
             </p>
-            <p className="text-white mb-1 text-base ff-op font-normal">
+            <p className="text-white mb-1 text-base ff-op font-normal leading-[2rem]">
               Block Dwarahat, District Almora Uttarakhand, India{" "}
             </p>
           </div>
-          <div className="flex lg:justify-end w-full">
-            <div className="lg:w-[80%]">
+          <div className=" flex lg:justify-end w-full lg:py-0 py-5">
+            <div className="lg:w-[80%] lg:block flex justify-start gap-9 w-full">
               <div className="">
                 <h3 className="text-white text-lg font-semibold ff-op">
                   Follow Us
                 </h3>
-                <ul className="flex gap-4 py-3">
+                <ul className="flex lg:gap-4 gap-2 py-3">
                   {socialContact.map((item, i) => (
                     <li key={i}>
                       <Link to={item.link} className="" target="_blank">
@@ -126,14 +126,14 @@ function Footer() {
                 <div className="flex gap-4 py-3">
                   <img
                     src={PayPal}
-                    className=""
+                    className="h-[2.5rem] lg:h-[26px]"
                     width={49}
                     height={26}
                     alt="PayPal"
                   />
                   <img
                     src={Razorpay}
-                    className=""
+                    className="h-[2.5rem] lg:h-[26px]"
                     width={49}
                     height={26}
                     alt="Razorpay"
@@ -149,7 +149,7 @@ function Footer() {
               <li className="list-none" key={i}>
                 <Link
                   to="/"
-                  className="text-clrWhite underline text-base font-medium ff-op"
+                  className="text-clrWhite underline text-base font-medium ff-op leading-[1.8rem]"
                 >
                   {item.name}
                 </Link>

@@ -30,7 +30,7 @@ function FifthSection() {
             Why Choose Us
           </h2>
 
-          <p className="text-clrWhite text-base font-normal text-justify ff-op leading-[1.813rem]">
+          <p className="text-clrWhite text-base font-normal text-justify ff-op leading-[1.813rem] lg:block hidden">
             Dunagiri Retreat offers a transformative experience for those
             seeking to deepen their spiritual practice in the majestic
             Himalayas. This revered location has historically been a tapo-bhumi,
@@ -44,7 +44,7 @@ function FifthSection() {
             place where the essence of India's spiritual heritage is palpable,
             free from the distractions of everyday life.
           </p>
-          <p className="text-clrWhite text-base font-normal text-justify ff-op leading-[1.813rem] pt-3">
+          <p className="text-clrWhite text-base font-normal text-justify ff-op leading-[1.813rem] pt-3 lg:block hidden">
             For more details, please visit the <Link to="/" className="underline">Retreats</Link>{" "}
             page.
           </p>

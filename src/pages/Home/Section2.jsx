@@ -62,7 +62,7 @@ const Section2 = () => {
               Visit Mahavatar Babaji's Cave
             </h2>
           </div>
-          <div className="py-4">
+          <div className="py-4 lg:block hidden">
             <p className="text-base ff-op font-normal text-justify">
               Discover the spiritual wonder of Mahavatar Babaji's Cave, a serene
               place in the Himalayas. Known as the birthplace of Kriya Yoga,

@@ -24,7 +24,7 @@ function ChoosePathSection() {
     },
   ];
   return (
-    <section className="bg-clrLightGray py-7">
+    <section className="bg-clrLightGray lg:py-7 py-3">
       <div className="custom_container">
         <div className="py-3">
           <h2 className="ff-f lg:text-[3.125rem] leading-[4.375rem] font-normal text-3xl text-center text-clrDarkGreen">{cpHeading}</h2>
@@ -35,17 +35,17 @@ function ChoosePathSection() {
         <div className="">
           <div className="grid lg:grid-cols-2 gap-2">
             {cpData.map((item, i) => (
-              <div className="flex flex-col gap-5 p-1" key={i}>
+              <div className="flex flex-col gap-5 p-2" key={i}>
                 <div className="flex justify-center lg:justify-start px-3">
                   <img src={item.img} className="rounded-full" alt="hero" />
                 </div>
                 <div className="">
-                  <h3 className="ff-f lg:text-[2.938rem] lg:leading-[4.125rem] text-3xl font-normal text-clrDarkGreen px-3">{item.hText}</h3>
+                  <h3 className="ff-f lg:text-[2.938rem] lg:text-start text-center lg:leading-[4.125rem] text-2xl font-normal text-clrDarkGreen px-3">{item.hText}</h3>
                 </div>
-                <div className="">
+                <div className="lg:block hidden">
                   <p className="text-justify ff-op  text-base font-normal px-3">{item.pText}</p>
                 </div>
-                <div className="px-3">
+                <div className="px-3 text-center lg:text-start">
                   <Link
                     to="#"
                     className="bg-clrLightGreen uppercase text-clrWhite hover:bg-clrWhite hover:text-clrLightGreen border border-clrLightGreen text-center py-2 px-7"

@@ -17,7 +17,8 @@ function Navbar() {
     <header className="bg-white py-2">
       <nav className="custom_container mx-auto flex justify-around lg:justify-center gap-10">
         <Link
-          to="tel:+"
+          to="https://wa.me/+919810267719"
+          target="_blank"
           className="lg:hidden  flex items-center justify-center "
         >
           <span className="sr-only">call</span>

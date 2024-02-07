@@ -41,7 +41,7 @@ function Contact() {
         <div className="flex flex-col gap-5 lg:mb-0 mb-3">
           <div>
             <h2
-              className="capitalize lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl ff-f font-normal"
+              className="capitalize lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl ff-f font-normal text-center lg:text-start"
               id="contact"
             >
               Contact us
@@ -168,7 +168,7 @@ function Contact() {
                 className="w-full border border-2  border-clrDarkGreen text-sm outline-none p-2"
               ></textarea>
             </div>
-            <div className="col-start-2 col-end-4 p-1">
+            <div className="lg:col-start-2 lg:col-end-4 p-1 col-span-full">
               <button className="w-[100%] py-2 bg-clrLightGreen border text-sm border-clrLightGreen text-white text-center uppercase hover:bg-clrWhite hover:text-clrLightGreen active:scale-95">
                 send
               </button>

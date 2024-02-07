@@ -75,7 +75,7 @@ function AreUSection() {
             <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-4 py-2 px-1">
               {data.map((item, i) => (
                 <div className="flex flex-col" key={i}>
-                  <div className="">
+                  <div className="flex justify-center lg:justify-start">
                     <img src={item.png} alt="" aria-hidden="true" />
                   </div>
                   <div className="">

@@ -39,7 +39,7 @@ const Section3 = () => {
                   Yoga, this mystical site offers a transformative experience.
                   Embark your journey to a spiritual awakening.
                 </p>
-                <ul className="flex gap-4 justify-stretch">
+                <ul className="flex gap-4 lg:justify-start justify-center">
                   {socialContact.map((item, i) => (
                     <li key={i}>
                       <Link to={item.link} className="text-3xl ">
@@ -49,10 +49,10 @@ const Section3 = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="my-4 w-full">
+                <div className="my-4 w-full text-center lg:text-start">
                   <Link
                     to="/"
-                    className="text-clrWhite text-sm bg-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite border-clrLightGreen border text-center py-2 px-7 uppercase"
+                    className="text-clrWhite text-sm bg-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite border-clrLightGreen border text-center py-2 px-10 uppercase"
                   >
                     about us
                   </Link>
@@ -65,7 +65,7 @@ const Section3 = () => {
                 alt="founder-Img"
                 width={465}
                 height={542}
-                className="h-[40rem] w-full"
+                className="h-full w-full"
               />
             </div>
           </div>

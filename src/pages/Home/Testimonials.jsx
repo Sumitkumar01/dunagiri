@@ -107,10 +107,10 @@ function Testimonials() {
   return (
     <section className="py-7">
       <div className="custom_container">
-        <h2 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl text-center font-normal text-clrDarkGreen ff-f capitalize">
+        <h2 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl text-center font-normal text-clrDarkGreen ff-f capitalize lg:mb-0 mb-3">
           Dunagiri Retreat Blog
         </h2>
-        <div>
+        <div className="lg:block hidden">
           <p className="text-base font-normal ff-op text-justify py-4">
             Dive deep into the history and spiritual significance of Mahavatar
             Babaji's Cave. Our blog explores the revered destination, its

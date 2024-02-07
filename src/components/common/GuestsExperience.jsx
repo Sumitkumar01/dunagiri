@@ -1,5 +1,5 @@
 import React from "react";
-function GuestsExperience() {
+function GuestsExperience({clas}) {
 
   const data =[
     {number:"30%",desc:"Decrease in anxiety while staying at Dunagiri Retreat."},
@@ -8,7 +8,7 @@ function GuestsExperience() {
   ]
   return (
     <>
-      <section className="py-7 bg-clrDarkGreen">
+      <section className={`py-7 bg-clrDarkGreen ${clas}`}>
         <div className="custom_container">
           <div className="">
             <p className="text-clrWhite font-normal uppercase ff-l text-lg leading-[2rem]">OUR NUMBERS SPEAK FOR THEMSELVES</p>
