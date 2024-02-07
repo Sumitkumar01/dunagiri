@@ -1,10 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Autoplay,
-} from "swiper/modules";
+// const Swiper = lazy(() => import("swiper/react"));
+// const SwiperSlide = lazy(() => import("swiper/react"));
+import { Autoplay } from "swiper/modules";
+// const Autoplay = lazy(()=>import('swiper/modules'))
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -39,8 +38,16 @@ function ForthSection() {
     <section className="ForthSection lg:py-7 bg-clrLightGray">
       <div className="custom_container">
         <div className="flex flex-col items-center justify-center py-7">
-          <h2 className="text-center ff-f py-4 lg:text-4xl font-normal text-3xl text-clrDarkGreen">Guest Experiences</h2>
-          <p className="w-[min(95%,70rem)] font-normal ff-l text-xl text-justify">Explore the heartwarming stories and experiences of individuals who have journeyed with us to Mahavatar Babaji's Cave. Our guests recount transformative experiences, emphasizing the peace, spiritual insights, and serenity they encountered during their stay at Dunagiri Retreat.</p>
+          <h2 className="text-center ff-f py-4 lg:text-4xl font-normal text-3xl text-clrDarkGreen">
+            Guest Experiences
+          </h2>
+          <p className="w-[min(95%,70rem)] font-normal ff-l text-xl text-justify">
+            Explore the heartwarming stories and experiences of individuals who
+            have journeyed with us to Mahavatar Babaji's Cave. Our guests
+            recount transformative experiences, emphasizing the peace, spiritual
+            insights, and serenity they encountered during their stay at
+            Dunagiri Retreat.
+          </p>
         </div>
         <div className="container">
           <Swiper
@@ -51,7 +58,6 @@ function ForthSection() {
               disableOnInteraction: false,
             }}
             modules={[Autoplay]}
-            
           >
             {" "}
             {data.map((item, i) => (
@@ -60,13 +66,21 @@ function ForthSection() {
                   <div className="h-full ">
                     <img
                       src={item.imgurl}
-                      className="h-[40rem] rounded-t-full"
+                      width={493}
+                      height={640}
+                      className="rounded-t-full"
                       alt="hero-img"
                     />
                   </div>
-                  <div className={`bg-white lg:absolute lg:w-[35%] py-8 px-5 bottom-3 ${i%2===0?'right-0':'left-0'}`}>
-                    <p className="lg:text-4xl font-medium ff-f mb-3">{item.experience}</p>
-                    <hr className="w-2rem text-[5rem]"/>
+                  <div
+                    className={`bg-white lg:absolute lg:w-[35%] py-8 px-5 bottom-3 ${
+                      i % 2 === 0 ? "right-0" : "left-0"
+                    }`}
+                  >
+                    <p className="lg:text-4xl font-medium ff-f mb-3 text-justify">
+                      {item.experience}
+                    </p>
+                    <hr className="w-2rem text-[5rem]" />
                     <p className="text-2xl ff-f font-normal">
                       {item.name}, {item.country}
                     </p>

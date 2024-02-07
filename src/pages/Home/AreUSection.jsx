@@ -72,14 +72,14 @@ function AreUSection() {
                 {headingText}
               </h2>
             </div>
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-3 py-2">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-4 py-2 px-1">
               {data.map((item, i) => (
-                <div className="flex flex-col gap-3" key={i}>
+                <div className="grid grid-rows-3" key={i}>
                   <div className="">
                     <img src={item.png} alt="" />
                   </div>
                   <div className="">
-                    <p className="ff-f text-xl font-normal text-clrDarkGreen">{item.gridHeadingText}</p>
+                    <p className="ff-f text-2xl font-normal text-clrDarkGreen">{item.gridHeadingText}</p>
                   </div>
                   <div className="">
                     <p className="ff-l text-lg font-light text-justify">{item.gridPText}</p>

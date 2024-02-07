@@ -13,16 +13,18 @@ function Image({
   srcSet300w,
   srcSet768w,
   srcSet600w,
+  height,
+  width
 }) {
   return (
     <>
       <img
         loading="lazy"
         decoding="async"
-        // width={855}
-        // height={473}
+        width={width}
+        height={height}
         src={src}
-        // data-src={dataSrc}
+        data-src={dataSrc}
         className={className}
         alt={alt}
         // data-srcset={`${src855w} 855w,${src300w} 300w,${src768w}768w,${src600w}600w`}
