@@ -66,10 +66,12 @@
 
 .homebanner-h{
   height: 75%;
+  background-size: 20rem;
 }
 
 @media (width<768px) {
   .homebanner-h{
     height: 60%;
+    background-size: 17rem;
   }
 }

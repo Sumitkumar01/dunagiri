@@ -12,7 +12,7 @@ function Banner() {
       >
         <div
           className="bg-no-repeat bg-center bg-contain w-[min(90%,60rem)] homebanner-h"
-          style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "20rem" }}
+          style={{ backgroundImage: `url(${bgImg})` }}
         >
           <div className="flex items-center flex-col justify-center gap-4 h-full  bg-[rgba(0,0,0,.6)] ">
             <h1 className="lg:text-6xl text-2xl font-normal text-clrWhite text-center capitalize mb-3 ff-f">

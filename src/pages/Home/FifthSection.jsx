@@ -53,7 +53,7 @@ function FifthSection() {
       {data.map((item, i) => (
         <div
           key={i}
-          className="bg-cover border lg:flex items-end py-10 border-clrDarkGreen bg-current bg-no-repeat lg:h-[70vh] md:h-[60vh] h-max"
+          className="bg-cover border lg:flex items-end py-10 border-clrDarkGreen bg-current bg-no-repeat lg:h-[90vh] md:h-[60vh] h-max"
           style={{ backgroundImage: `url(${item.imgUrl})` }}
         >
           <div
