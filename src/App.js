@@ -1,9 +1,16 @@
 import "./App.scss";
+import React,{ Suspense, lazy } from 'react';
 import Navbar from "./components/Header/Navbar";
 import { Route, Routes } from "react-router-dom";
-import Homepage from "./pages/Home/Homepage";
-import Footer from "./components/common/Footer";
-import WhatsApp from "./components/common/WhatsApp";
+
+const Homepage = lazy(() => import("./pages/Home/Homepage"));
+const Footer = lazy(() => import("./components/common/Footer"));
+const WhatsApp = lazy(() => import("./components/common/WhatsApp"));
+
+
+// import Homepage from "./pages/Home/Homepage";
+// import Footer from "./components/common/Footer";
+// import WhatsApp from "./components/common/WhatsApp";
 
 function App() {
   return (
