@@ -36,7 +36,7 @@ function SliderSection1(props) {
     <section className="lg:py-7">
       <div className="custom_container">
         <div className="">
-          <h2 className="lg:text-5xl font-normal text-3xl text-center ff-f py-5">
+          <h2 className="lg:text-[3.5rem] font-normal text-3xl text-center ff-f py-5">
             As Featured In
           </h2>
           <div>
@@ -55,8 +55,8 @@ function SliderSection1(props) {
                 <SwiperSlide key={i}>
                   <div className="h-[39vh] flex flex-col gap-3 justify-center items-center">
                     <img src={item.imgUrl} alt="logo" className="text-center"/>
-                    <h3 className="lg:text-4xl text-2xl text-center ff-f font-normal">{item.heading}</h3>
-                    <Link to={item.link} className="lg:text-4xl text-xl text-center ff-f font-normal underline">{item.linkText}</Link>
+                    <h3 className="lg:text-2xl text-2xl text-center ff-f font-normal">{item.heading}</h3>
+                    <Link to={item.link} className="lg:text-3xl text-xl text-center ff-f font-normal underline">{item.linkText}</Link>
                   </div>
                 </SwiperSlide>
               ))}

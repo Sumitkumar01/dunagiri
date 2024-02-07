@@ -63,6 +63,8 @@ const Section3 = () => {
               <img
                 src={founderImg}
                 alt="founder-Img"
+                width={465}
+                height={542}
                 className="h-[40rem] w-full"
               />
             </div>
