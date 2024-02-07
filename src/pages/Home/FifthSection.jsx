@@ -26,13 +26,13 @@ function FifthSection() {
     <section className="fifth-Section">
       <div className="py-7 bg-clrDarkGreen">
         <div className="custom_container">
-          <h2 className="capitalize lg:text-4xl text-3xl ff-f  text-clrWhite font-normal text-center py-6">
+          <h2 className="capitalize lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl ff-f  text-clrWhite font-normal text-center py-3">
             Why Choose Us
           </h2>
 
-          <p className="text-clrWhite text-lg font-normal text-justify ff-l">
-            Why Choose Us Dunagiri Retreat offers a transformative experience
-            for those seeking to deepen their spiritual practice in the majestic
+          <p className="text-clrWhite text-base font-normal text-justify ff-op leading-[1.813rem]">
+            Dunagiri Retreat offers a transformative experience for those
+            seeking to deepen their spiritual practice in the majestic
             Himalayas. This revered location has historically been a tapo-bhumi,
             where the land's energy enhances spiritual disciplines, following
             the footsteps of legendary masters like Mahavatar Babaji and Lahiri
@@ -42,8 +42,11 @@ function FifthSection() {
             authentic Indian experiences, Dunagiri Retreat invites yoga
             teachers, healers, and spiritual practitioners to host retreats in a
             place where the essence of India's spiritual heritage is palpable,
-            free from the distractions of everyday life. For more details,
-            please visit the <Link to="/" className="underline">Retreats</Link> page.
+            free from the distractions of everyday life.
+          </p>
+          <p className="text-clrWhite text-base font-normal text-justify ff-op leading-[1.813rem] pt-3">
+            For more details, please visit the <Link to="/" className="underline">Retreats</Link>{" "}
+            page.
           </p>
         </div>
       </div>
@@ -54,15 +57,17 @@ function FifthSection() {
           style={{ backgroundImage: `url(${item.imgUrl})` }}
         >
           <div
-            className={`custom_container w-full lg:flex justify-${
-              i % 2 === 0 ? "start" : "end"
+            className={`custom_container-2 w-full lg:flex justify-${
+              i % 2 === 0 ? "end" : "start"
             }`}
           >
             <div className="lg:w-[70%] w-full bg-clrWhite py-8 lg:px-28 md:px-24 px-5 flex flex-col gap-7 ">
-              <h3 className="lg:text-4xl text-xl ff-f font-normal text-clrDarkGreen">
+              <h3 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl ff-f font-normal text-clrDarkGreen">
                 {i + 1}. {item.heading}
               </h3>
-              <p className="text-lg font-normal ff-l text-justify">{item.description}</p>
+              <p className="text-base font-normal ff-op text-justify">
+                {item.description}
+              </p>
               <div className="hover:border-b-clrLightGreen hover:border-b w-max pe-6">
                 <Link
                   to="#"

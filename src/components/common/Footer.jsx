@@ -29,7 +29,7 @@ function Footer() {
     <section className="footer-section bg-clrDarkGreen py-7">
       <div className="custom_container">
         <div className="py-4">
-          <p className="text-xl ff-l font-normal text-clrWhite py-4 text-justify">
+          <p className="text-base ff-op font-normal text-clrWhite py-4 text-justify">
             For more information or to plan your visit to{" "}
             <strong className="font-bold">Mahavatar Babaji's Cave</strong>, please contact us via
             Whatsapp at{" "}
@@ -38,7 +38,7 @@ function Footer() {
             </Link>
             .
           </p>
-          <p className="text-xl ff-l font-normal text-clrWhite text-justify">
+          <p className="text-base ff-op font-normal text-clrWhite text-justify">
             Embrace a transformative experience, attend a yoga retreat, or find
             your escape in the heart of the Himalayas at{" "}
             <strong className="font-bold">Dunagiri Retreat</strong>.
@@ -46,41 +46,41 @@ function Footer() {
         </div>
         <div className="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-4">
           <div className="">
-            <h2 className="text-white text-xl font-semibold ff-l">Contact Us</h2>
-            <p className="text-white mb-1 ">
+            <h2 className="text-white text-base font-semibold ff-op">Contact Us</h2>
+            <p className="text-white mb-1  text-base">
               TEL:{" "}
               <Link
                 to="tel:+919810267719"
-                className="text-base ff-l font-normal"
+                className="text-base ff-op font-normal"
                 aria-label="Call us"
               >
                 +91 98102 67719
               </Link>
             </p>
-            <p className="text-white mb-1 ">
+            <p className="text-white mb-1 text-base">
               <Link
                 to="tel:+919690132425"
-                className="text-base ff-l font-normal"
+                className="text-base ff-op font-normal"
                 aria-label="Call us"
               >
                 +91 96901 32425
               </Link>
             </p>
-            <p className="text-white mb-1 ">
+            <p className="text-white mb-1 text-base">
               WhatsApp:{" "}
               <Link
                 to="https://wa.me/919810267719"
-                className="text-base ff-l font-normal"
+                className="text-base ff-op font-normal"
                 aria-label="WhatsApp"
               >
                 +91 98102 67719
               </Link>
             </p>
-            <p className="text-white mb-1 ">
+            <p className="text-white mb-1 text-base">
               E-MAIL:{" "}
               <Link
                 to="mailto:delighted@dunagiri.com"
-                className="text-base ff-l font-normal"
+                className="text-base ff-op font-normal"
                 aria-label="Email us"
               >
                 delighted@dunagiri.com
@@ -89,18 +89,18 @@ function Footer() {
           </div>
 
           <div className="">
-            <h3 className="text-white text-xl font-semibold ff-l">Address</h3>
-            <p className="text-white mb-1 text-base ff-l font-normal">
+            <h3 className="text-white text-base font-semibold ff-op">Address</h3>
+            <p className="text-white mb-1 text-base ff-op font-normal">
               Village Chari, Near Mahavatar Babaji's Cave, PO Dunagiri,
             </p>
-            <p className="text-white mb-1 text-base ff-l font-normal">
+            <p className="text-white mb-1 text-base ff-op font-normal">
               Block Dwarahat, District Almora Uttarakhand, India{" "}
             </p>
           </div>
           <div className="flex lg:justify-end w-full">
             <div className="lg:w-[80%]">
               <div className="">
-                <h3 className="text-white text-lg font-semibold ff-p">
+                <h3 className="text-white text-lg font-semibold ff-op">
                   Follow Us
                 </h3>
                 <ul className="flex gap-4 py-3">
@@ -120,7 +120,7 @@ function Footer() {
                 </ul>
               </div>
               <div className="">
-                <h3 className="text-white text-lg font-semibold ff-p">
+                <h3 className="text-white text-lg font-semibold ff-op">
                   We Accept
                 </h3>
                 <div className="flex gap-4 py-3">
@@ -149,7 +149,7 @@ function Footer() {
               <li className="list-none" key={i}>
                 <Link
                   to="/"
-                  className="text-clrWhite underline text-xl font-medium ff-l"
+                  className="text-clrWhite underline text-base font-medium ff-op"
                 >
                   {item.name}
                 </Link>
@@ -158,7 +158,7 @@ function Footer() {
           </ul>
         </div>
         <div className="pt-6">
-          <p className="text-center text-white  text-lg font-medium ff-p">
+          <p className="text-center text-white  text-base font-medium ff-op">
             © 2023 by DUNAGIRI RETREAT{" "}
           </p>
         </div>

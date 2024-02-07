@@ -35,13 +35,13 @@ function Contact() {
   ];
   return (
     <section className="py-5">
-      <div className="lg:grid =  lg:grid-cols-3  custom_container gap-2">
+      <div className="lg:grid  lg:grid-cols-2  custom_container gap-2">
         {/* -------------------------------contact details-------------------------------------- */}
 
         <div className="flex flex-col gap-5 lg:mb-0 mb-3">
           <div>
             <h2
-              className="capitalize lg:text-4xl text-3xl ff-f font-normal"
+              className="capitalize lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl ff-f font-normal"
               id="contact"
             >
               Contact us
@@ -52,7 +52,7 @@ function Contact() {
             <span className="pt-2">
               <IoLocationOutline />
             </span>
-            <p className="font-normal text-black text-lg">
+            <p className="font-normal text-black text-base ff-op">
               Dunagiri Retreat, Village Chari, Near Mahavatar Babaji's Cave,
               Block, Dwarahat, Uttarakhand 263653 India
             </p>
@@ -62,7 +62,7 @@ function Contact() {
               <li key={i}>
                 <Link
                   to={item.link}
-                  className="flex items-center justify-start gap-3 text-lg"
+                  className="flex items-center justify-start gap-3 text-base ff-op"
                 >
                   {item.icon} {item.data}
                 </Link>
@@ -92,7 +92,7 @@ function Contact() {
               <div>
                 <label
                   htmlFor="f-name"
-                  className="capitalize lg:text-xl text-lg ff-l font-normal text-clrDarkGreen"
+                  className="capitalize text-base ff-l font-normal text-clrDarkGreen"
                 >
                   first name
                 </label>
@@ -101,14 +101,14 @@ function Contact() {
                 id="f-name"
                 type="text"
                 required
-                className="w-full border border-2  border-clrDarkGreen text-xl outline-none p-2"
+                className="w-full border border-2  border-clrDarkGreen text-sm outline-none p-2"
               />
             </div>
             <div className="">
               <div>
                 <label
                   htmlFor="l-name"
-                  className="capitalize lg:text-xl text-lg ff-l font-normal text-clrDarkGreen"
+                  className="capitalize text-base ff-l font-normal text-clrDarkGreen"
                 >
                   last name
                 </label>
@@ -117,14 +117,14 @@ function Contact() {
                 id="l-name"
                 type="text"
                 required
-                className="w-full border border-2  border-clrDarkGreen text-xl outline-none p-2"
+                className="w-full border border-2  border-clrDarkGreen text-sm outline-none p-2"
               />
             </div>
             <div className="col-span-2">
               <div>
                 <label
                   htmlFor="email"
-                  className="capitalize lg:text-xl text-lg ff-l font-normal text-clrDarkGreen"
+                  className="capitalize text-base ff-l font-normal text-clrDarkGreen"
                 >
                   email*
                 </label>
@@ -133,14 +133,14 @@ function Contact() {
                 id="email"
                 type="email"
                 required
-                className="w-full border border-2  border-clrDarkGreen text-xl outline-none p-2"
+                className="w-full border border-2  border-clrDarkGreen text-sm outline-none p-2"
               />
             </div>
             <div className="col-span-2">
               <div>
                 <label
                   htmlFor="phone"
-                  className="capitalize lg:text-xl text-lg ff-l font-normal text-clrDarkGreen"
+                  className="capitalize text-base ff-l font-normal text-clrDarkGreen"
                 >
                   phone
                 </label>
@@ -148,14 +148,14 @@ function Contact() {
               <input
                 id="phone"
                 type="text"
-                className="w-full border border-2 border-clrDarkGreen  text-xl outline-none p-2"
+                className="w-full border border-2 border-clrDarkGreen  text-sm outline-none p-2"
               />
             </div>
             <div className="col-span-2">
               <div>
                 <label
                   htmlFor="message"
-                  className="capitalize lg:text-xl text-lg ff-l font-normal text-clrDarkGreen"
+                  className="capitalize text-base ff-l font-normal text-clrDarkGreen"
                 >
                   message
                 </label>
@@ -165,11 +165,11 @@ function Contact() {
                 id="message"
                 cols="30"
                 rows="3"
-                className="w-full border border-2  border-clrDarkGreen text-xl outline-none p-2"
+                className="w-full border border-2  border-clrDarkGreen text-sm outline-none p-2"
               ></textarea>
             </div>
             <div className="col-start-2 col-end-4 p-1">
-              <button className="w-[100%] py-2 bg-clrLightGreen border border-clrLightGreen text-white text-center uppercase hover:bg-clrWhite hover:text-clrLightGreen active:scale-95">
+              <button className="w-[100%] py-2 bg-clrLightGreen border text-sm border-clrLightGreen text-white text-center uppercase hover:bg-clrWhite hover:text-clrLightGreen active:scale-95">
                 send
               </button>
             </div>
@@ -180,7 +180,9 @@ function Contact() {
 
         {/* -------------------------------map-------------------------------------- */}
 
-        <div className="lg:h-full md:h-[35vh] h-[25vh]">
+        
+      </div>
+      <div className="custom_container h-[40vh]">
           <iframe
             title="google map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.4281967432426!2d79.44595647554533!3d29.823059675035683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a7547b97e9c3b5%3A0xeed550edee305a4b!2sDunagiri%20Retreat!5e0!3m2!1sen!2sin!4v1707143119714!5m2!1sen!2sin"
@@ -195,7 +197,6 @@ function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
-      </div>
     </section>
   );
 }

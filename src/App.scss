@@ -22,6 +22,11 @@
   margin: 0 auto;
   padding: 0 1rem;
 }
+.custom_container-2{
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
 
 @media (width<768px) {
@@ -33,6 +38,11 @@
   .bg_hidden{
     overflow: hidden;
   }
+  .custom_container-2{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
 }
 
 @media (width<568px) {
@@ -40,5 +50,21 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+  }
+  .custom_container-2{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
+
+
+.homebanner-h{
+  height: 75%;
+}
+
+@media (width<768px) {
+  .homebanner-h{
+    height: 60%;
   }
 }

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function ChoosePathSection() {
   const cpHeading = "choose your path";
   const cphText =
-    "Choose your transformational adventure at your own pace — join our dynamic retreat groups or come solo.";
+    "Choose your transformational adventure at your own pace — host a group retreat or come solo.";
   const cpData = [
     {
       img: CpImg1,
@@ -24,26 +24,26 @@ function ChoosePathSection() {
     },
   ];
   return (
-    <section className="bg-clrLightOrange py-7">
+    <section className="bg-clrLightGray py-7">
       <div className="custom_container">
         <div className="py-3">
-          <h2 className="ff-f lg:text-4xl font-normal text-3xl text-center text-clrDarkGreen">{cpHeading}</h2>
+          <h2 className="ff-f lg:text-[3.125rem] leading-[4.375rem] font-normal text-3xl text-center text-clrDarkGreen">{cpHeading}</h2>
         </div>
         <div className="py-3">
-          <p className="text-center ff-l lg:text-xl text-base font-normal">{cphText}</p>
+          <p className="text-center ff-op lg:text-xl text-base font-normal">{cphText}</p>
         </div>
         <div className="">
           <div className="grid lg:grid-cols-2 gap-4">
             {cpData.map((item, i) => (
-              <div className="flex flex-col gap-5 p-2" key={i}>
+              <div className="grid grid-rows-4 gap-5 p-2" key={i}>
                 <div className="flex justify-center lg:justify-start">
                   <img src={item.img} className="rounded-full" alt="" />
                 </div>
                 <div className="">
-                  <h3 className="ff-f lg:text-4xl text-3xl font-normal text-clrDarkGreen">{item.hText}</h3>
+                  <h3 className="ff-f lg:text-[2.938rem] lg:leading-[4.125rem] text-3xl font-normal text-clrDarkGreen">{item.hText}</h3>
                 </div>
                 <div className="">
-                  <p className="text-justify ff-l lg:text-lg text-base font-normal">{item.pText}</p>
+                  <p className="text-justify ff-op  text-base font-normal">{item.pText}</p>
                 </div>
                 <div className="">
                   <Link

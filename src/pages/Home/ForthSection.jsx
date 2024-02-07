@@ -38,13 +38,13 @@ function ForthSection() {
     <section className="ForthSection lg:py-7 bg-clrLightGray">
       <div className="custom_container">
         <div className="flex flex-col items-center justify-center py-7">
-          <h2 className="text-center ff-f py-4 lg:text-4xl font-normal text-3xl text-clrDarkGreen">
+          <h2 className="text-center ff-f  lg:text-[3.125rem] lg:leading-[4.375rem] font-normal text-3xl text-clrDarkGreen">
             Guest Experiences
           </h2>
-          <p className="w-[min(95%,70rem)] font-normal ff-l text-xl text-justify">
+          <p className="font-normal ff-op text-base text-justify">
             Explore the heartwarming stories and experiences of individuals who
-            have journeyed with us to Mahavatar Babaji's Cave. Our guests
-            recount transformative experiences, emphasizing the peace, spiritual
+            have visited us and Mahavatar Babaji's Cave. Our guests recount
+            transformative experiences, emphasizing the peace, spiritual
             insights, and serenity they encountered during their stay at
             Dunagiri Retreat.
           </p>
@@ -73,15 +73,15 @@ function ForthSection() {
                     />
                   </div>
                   <div
-                    className={`bg-white lg:absolute lg:w-[35%] py-8 px-5 bottom-3 ${
+                    className={`bg-white lg:absolute lg:w-[30%] lg:h[90rem] py-8 px-5 bottom-3 ${
                       i % 2 === 0 ? "right-0" : "left-0"
                     }`}
                   >
-                    <p className="lg:text-4xl font-medium ff-f mb-3 text-justify">
+                    <p className="lg:text-xl font-medium ff-f mb-3 text-justify" style={{wordSpacing:"-0.110rem"}}>
                       {item.experience}
                     </p>
-                    <hr className="w-2rem text-[5rem]" />
-                    <p className="text-2xl ff-f font-normal">
+                    <hr className="w-2rem" />
+                    <p className="text-lg ff-f font-normal">
                       {item.name}, {item.country}
                     </p>
                   </div>

@@ -14,7 +14,7 @@ function Navbar() {
     window.document.body.classList.toggle("bg_hidden");
   };
   return (
-    <header className="bg-white py-5">
+    <header className="bg-white py-2">
       <nav className="custom_container mx-auto flex justify-around lg:justify-center gap-10">
         <Link
           to="tel:+"
@@ -31,7 +31,7 @@ function Navbar() {
           {Nav_Lists.map((links, i) => {
             return (
               <li key={i} className="desktop-li">
-                <Link to="/" className="capitalize text-xl font-normal group">
+                <Link to="/" className="capitalize text-base font-normal">
                   {links.linkName}
                 </Link>
                 {links.subMenu && (

@@ -16,15 +16,15 @@ const Section3 = () => {
   return (
     <>
       <section className="py-7 bg-clrLightGray">
-        <div className="custom_container bg-clrWhite">
+        <div className="custom_container-2 bg-clrWhite">
           <div className="lg:grid lg:grid-cols-5 gap-4">
             <div className="col-span-3 ">
               <div className="flex flex-col gap-4 justify-center h-full">
-                <h2 className="lg:text-4xl text-3xl font-normal ff-f text-clrDarkGreen">
+                <h2 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl font-normal ff-f text-clrDarkGreen">
                   Meet Our Founder <br />
                   Piyush Kumar
                 </h2>
-                <p className="text-xl font-normal ff-l text-justify">
+                <p className="text-base font-normal ff-op text-justify">
                   Guided by the philosophy that love transcends monetary value,
                   Piyush Kumar, a former World Bank professional, established
                   Dunagiri Retreat in 2005. His vision was to create a retreat
@@ -32,7 +32,7 @@ const Section3 = () => {
                   fostering a unique synergy between guests and villagers under
                   the retreat's guiding principles.
                 </p>
-                <p className="text-xl font-normal ff-l text-justify">
+                <p className="text-base font-normal ff-op text-justify">
                   Dunagiri Retreat is your invitation to experiencing the sacred
                   Mahavatar Babaji's Cave, nestled in the serene Himalayas. A
                   beacon of spiritual awakening and the birthplace of Kriya
@@ -52,7 +52,7 @@ const Section3 = () => {
                 <div className="my-4 w-full">
                   <Link
                     to="/"
-                    className="text-clrWhite text-xl bg-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite border-clrLightGreen border text-center py-2 px-7 uppercase"
+                    className="text-clrWhite text-sm bg-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite border-clrLightGreen border text-center py-2 px-7 uppercase"
                   >
                     about us
                   </Link>

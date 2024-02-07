@@ -58,31 +58,24 @@ const Section2 = () => {
       <section className="py-7">
         <div className="custom_container">
           <div className="py-4">
-            <h2 className="lg:text-5xl text-2xl ff-f font-normal text-clrDarkGreen text-center">
+            <h2 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-2xl ff-f font-normal text-clrDarkGreen text-center">
               Visit Mahavatar Babaji's Cave
             </h2>
           </div>
           <div className="py-4">
-            <p className="text-xl ff-l font-normal text-justify">
+            <p className="text-base ff-op font-normal text-justify">
               Discover the spiritual wonder of Mahavatar Babaji's Cave, a serene
-              place in the Himalayas. Known for its role in the birth of Kriya
-              Yoga, this cave is a must-visit for those interested in
-              spirituality and yoga. It's here that Mahavatar Babaji taught
-              Lahiri Mahasaya, starting a spiritual legacy.
+              place in the Himalayas. Known as the birthplace of Kriya Yoga,
+              this cave is a must-visit for those interested in learning about
+              the history of yoga. Just 25 km from Dwarahat and 2 kilometers
+              from Dunagiri Retreat, the cave is easily accessible and perfect
+              for meditation. Whether you are a yoga enthusiast or looking for
+              peace, Babaji's Cave offers a unique experience. Learn about
+              Mahavatar Babaji's teachings and feel the history of this sacred
+              place.
             </p>
           </div>
-          <div className="py-4">
-            <p className="text-xl ff-l font-normal text-justify">
-              Just 25 km from Dwarahat in the Dunagiri mountains, the cave is
-              easily accessible and perfect for meditation. Whether you are a
-              yoga enthusiast or looking for peace, Babaji's Cave offers a
-              unique experience. It combines natural beauty with deep
-              spirituality. Learn about Mahavatar Babaji's teachings and feel
-              the history of this sacred place. Plan your visit at Dunagiri
-              Retreat and experience the tranquility and wisdom of this special
-              Himalayan cave.
-            </p>
-          </div>
+
           <Swiper
             modules={[Pagination, Autoplay]}
             // pagination={{
@@ -135,11 +128,11 @@ const Section2 = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          {show && <ImgPopup data={data} setShow={setShow}/>}
+          {show && <ImgPopup data={data} setShow={setShow} />}
           <div className="text-center py-6">
             <Link
               to="/"
-              className="py-2 px-9 text-2xl font-normal ff-f bg-clrLightGreen text-clrWhite hover:bg-clrWhite hover:text-clrLightGreen border border-clrLightGreen "
+              className="py-2 px-9 text-sm font-normal ff-f bg-clrLightGreen text-clrWhite hover:bg-clrWhite hover:text-clrLightGreen border border-clrLightGreen "
             >
               ACTIVITIES
             </Link>

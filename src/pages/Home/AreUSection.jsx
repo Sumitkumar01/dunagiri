@@ -1,5 +1,5 @@
 import React from "react";
-import WowImageAreYou from "../../assets/images/WowImageAreYou.png";
+import WowImageAreYou from "../../assets/images/asset4.webp";
 import AreUWowImage1 from "../../assets/images/AreUWowImage1.png";
 import AreUWowImage2 from "../../assets/images/AreUWowImage2.png";
 import AreUWowImage3 from "../../assets/images/AreUWowImage3.png";
@@ -50,8 +50,8 @@ function AreUSection() {
   ];
   return (
     <section className="py-7">
-      <div className="custom_container">
-        <div className="lg:grid lg:grid-cols-3 gap-4">
+      <div className="custom_container-2">
+        <div className="lg:grid lg:grid-cols-3 gap-7">
           <div className="w-full">
             <img
               src={WowImageAreYou}
@@ -63,26 +63,26 @@ function AreUSection() {
           </div>
           <div className="col-span-2">
             <div className="py-3">
-              <p className="uppercase ff-l font-light text-2xl">
+              <p className="uppercase ff-l font-light text-lg">
                 {pheadingText}
               </p>
             </div>
             <div className="py-3">
-              <h2 className="lg:text-4xl text-3xl font-medium text-clrLightGreen ff-f">
+              <h2 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl font-medium text-clrDarkGreen ff-f">
                 {headingText}
               </h2>
             </div>
             <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-4 py-2 px-1">
               {data.map((item, i) => (
-                <div className="grid grid-rows-3" key={i}>
+                <div className="flex flex-col" key={i}>
                   <div className="">
-                    <img src={item.png} alt="" />
+                    <img src={item.png} alt="" aria-hidden="true" />
                   </div>
                   <div className="">
-                    <p className="ff-f text-2xl font-normal text-clrDarkGreen">{item.gridHeadingText}</p>
+                    <p className="ff-f text-xl font-normal text-clrDarkGreen">{item.gridHeadingText}</p>
                   </div>
                   <div className="">
-                    <p className="ff-l text-lg font-light text-justify">{item.gridPText}</p>
+                    <p className="ff-l text-base font-light ">{item.gridPText}</p>
                   </div>
                 </div>
               ))}
