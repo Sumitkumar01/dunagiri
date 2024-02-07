@@ -16,9 +16,9 @@ const Section3 = () => {
   return (
     <>
       <section className="py-7 bg-clrLightGray">
-        <div className="custom_container-2 bg-clrWhite">
+        <div className="custom_container-3 bg-clrWhite">
           <div className="lg:grid lg:grid-cols-5 gap-4">
-            <div className="col-span-3 ">
+            <div className="col-span-3 lg:px-14">
               <div className="flex flex-col gap-4 justify-center h-full">
                 <h2 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl font-normal ff-f text-clrDarkGreen">
                   Meet Our Founder <br />
@@ -59,7 +59,7 @@ const Section3 = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-2">
+            <div className="col-span-2 ">
               <img
                 src={founderImg}
                 alt="founder-Img"

@@ -119,7 +119,9 @@ function Testimonials() {
             journey from Dunagiri Retreat to this sacred site.
           </p>
         </div>
-        <div>
+        
+      </div>
+      <div className="custom_container-3">
           <Swiper
             modules={[Pagination, Autoplay]}
             // pagination={{
@@ -149,14 +151,14 @@ function Testimonials() {
             {testimonialData.map((item, i) => (
               <SwiperSlide key={i}>
                 <div
-                  className="bg-no-repeat bg-cover bg-center h-[40vh]"
+                  className="bg-no-repeat bg-cover bg-center lg:h-[50vh] h-[40vh]"
                   style={{ backgroundImage: `url(${item.url})` }}
                 >
                   <div className="flex flex-col items-start justify-between w-full h-full p-6 bg-[rgba(0,0,0,.5)]">
                     <span className="flex text-lg text-clrWhite ff-l font-normal">
                       {item.date} . {item.time}
                     </span>
-                    <h3 className="text-2xl font-medium text-clrWhite ff-f">
+                    <h3 className="text-xl font-medium text-clrWhite ff-f">
                       {item.desc}
                     </h3>
                   </div>
@@ -165,7 +167,6 @@ function Testimonials() {
             ))}
           </Swiper>
         </div>
-      </div>
     </section>
   );
 }

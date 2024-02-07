@@ -1,6 +1,6 @@
 import React from "react";
 import CpImg1 from "../../assets/images/CpImg1.png";
-import CpImg2 from "../../assets/images/CpImg2.avif";
+import CpImg2 from "../../assets/images/sliderimg/GuestMeditating.avif";
 import { Link } from "react-router-dom";
 
 function ChoosePathSection() {
@@ -33,19 +33,19 @@ function ChoosePathSection() {
           <p className="text-center ff-op lg:text-xl text-base font-normal">{cphText}</p>
         </div>
         <div className="">
-          <div className="grid lg:grid-cols-2 gap-4">
+          <div className="grid lg:grid-cols-2 gap-2">
             {cpData.map((item, i) => (
-              <div className="grid grid-rows-4 gap-5 p-2" key={i}>
-                <div className="flex justify-center lg:justify-start">
-                  <img src={item.img} className="rounded-full" alt="" />
+              <div className="flex flex-col gap-5 p-1" key={i}>
+                <div className="flex justify-center lg:justify-start px-3">
+                  <img src={item.img} className="rounded-full" alt="hero" />
                 </div>
                 <div className="">
-                  <h3 className="ff-f lg:text-[2.938rem] lg:leading-[4.125rem] text-3xl font-normal text-clrDarkGreen">{item.hText}</h3>
+                  <h3 className="ff-f lg:text-[2.938rem] lg:leading-[4.125rem] text-3xl font-normal text-clrDarkGreen px-3">{item.hText}</h3>
                 </div>
                 <div className="">
-                  <p className="text-justify ff-op  text-base font-normal">{item.pText}</p>
+                  <p className="text-justify ff-op  text-base font-normal px-3">{item.pText}</p>
                 </div>
-                <div className="">
+                <div className="px-3">
                   <Link
                     to="#"
                     className="bg-clrLightGreen uppercase text-clrWhite hover:bg-clrWhite hover:text-clrLightGreen border border-clrLightGreen text-center py-2 px-7"
