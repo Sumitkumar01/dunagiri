@@ -1,6 +1,6 @@
 import React from "react";
 import bannerImg from "../../assets/images/homebanner.avif";
-import bgImg from "../../assets/images/asset2.png";
+import bgImg from "../../assets/images/asset2webp.webp";
 import { HashLink as Link } from "react-router-hash-link";
 
 function Banner() {
