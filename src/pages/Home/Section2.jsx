@@ -107,7 +107,7 @@ const Section2 = () => {
                   }}
                 >
                   <div
-                    className="bg-no-repeat bg-contain  bg-center h-[40vh] w-full hover:scale-110 duration-300"
+                    className="bg-no-repeat cust_cover  bg-center h-[40vh] w-full hover:scale-110 duration-300"
                     style={{ backgroundImage: `url(${item.imgUrl})`,backgroundAttachment:'fixed' }}
                   >
                     <div className="group flex flex-col items-center justify-end w-full h-full p-6 hover:bg-[rgba(0,0,0,.5)] ">

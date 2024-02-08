@@ -52,7 +52,7 @@ function AreUSection() {
     <section className="py-7">
       <div className="custom_container-2">
         <div className="lg:grid lg:grid-cols-3 gap-7">
-          <div className="w-full">
+          <div className="w-full ">
             <img
               src={WowImageAreYou}
               className="w-full h-full"
@@ -62,19 +62,19 @@ function AreUSection() {
             />
           </div>
           <div className="col-span-2">
-            <div className="py-3">
+            <div className="py-3 px-6">
               <p className="uppercase ff-l font-light text-lg">
                 {pheadingText}
               </p>
             </div>
-            <div className="py-3">
+            <div className="py-3 px-6">
               <h2 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl font-medium text-clrDarkGreen ff-f">
                 {headingText}
               </h2>
             </div>
-            <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-4 py-2 px-1">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 py-2 px-1">
               {data.map((item, i) => (
-                <div className="flex flex-col" key={i}>
+                <div className="flex flex-col gap-6 px-6" key={i}>
                   <div className="flex justify-center lg:justify-start">
                     <img
                       src={item.png}

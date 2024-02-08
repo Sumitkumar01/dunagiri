@@ -53,11 +53,11 @@ function FifthSection() {
       {data.map((item, i) => (
         <div
           key={i}
-          className="bg-cover border lg:flex items-end py-10 border-clrDarkGreen bg-current bg-no-repeat lg:h-[90vh] md:h-[60vh] h-max"
+          className="bg-cover-2 border lg:flex items-end lg:py-10 pb-[10rem] border-clrDarkGreen bg-current bg-no-repeat lg:h-[90vh] md:h-[60vh] h-max"
           style={{ backgroundImage: `url(${item.imgUrl})` }}
         >
           <div
-            className={`custom_container-2 w-full lg:flex justify-${
+            className={`custom_container-4 w-full lg:flex justify-${
               i % 2 === 0 ? "end" : "start"
             }`}
           >
@@ -71,7 +71,7 @@ function FifthSection() {
               <div className="hover:border-b-clrLightGreen hover:border-b w-max pe-6">
                 <Link
                   to="#"
-                  className="text-decoration-none capitalize text-base ff-l font-normal"
+                  className="text-decoration-none capitalize text-base font-semibold ff-l font-normal"
                 >
                   read more
                 </Link>
