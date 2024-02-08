@@ -56,8 +56,8 @@ function AreUSection() {
             <img
               src={WowImageAreYou}
               className="w-full h-full"
-              width={'100%'}
-              height={'100%'}
+              width={"100%"}
+              height={"100%"}
               alt="WowImageAreYou"
             />
           </div>
@@ -76,13 +76,25 @@ function AreUSection() {
               {data.map((item, i) => (
                 <div className="flex flex-col" key={i}>
                   <div className="flex justify-center lg:justify-start">
-                    <img src={item.png} alt="" aria-hidden="true" />
+                    <img
+                      src={item.png}
+                      alt=""
+                      aria-hidden="true"
+                      style={{
+                        filter:
+                          "invert(12%) sepia(21%) saturate(573%) hue-rotate(120deg) brightness(94%) contrast(90%)",
+                      }}
+                    />
                   </div>
                   <div className="">
-                    <p className="ff-f text-xl font-normal text-clrDarkGreen">{item.gridHeadingText}</p>
+                    <p className="ff-f text-xl font-normal text-clrDarkGreen">
+                      {item.gridHeadingText}
+                    </p>
                   </div>
                   <div className="">
-                    <p className="ff-l text-base font-light ">{item.gridPText}</p>
+                    <p className="ff-l text-base font-light ">
+                      {item.gridPText}
+                    </p>
                   </div>
                 </div>
               ))}
