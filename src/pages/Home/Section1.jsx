@@ -13,7 +13,7 @@ const Section1 = () => {
               </h2>
             </div>
             
-            <div className="col-start-4 col-end-7 lg:p-2">
+            <div className="col-start-4 col-end-7 lg:pe-16 ms-[4rem]">
               <p className="lg:text-3xl text-xl lg:leading-[3rem] mb-3 text-white font-normal ff-op text-justify">
                 “Keep close to Nature's heart...and break clear away, once in a
                 while, and climb a mountain or spend a week in the woods. Wash
@@ -22,7 +22,7 @@ const Section1 = () => {
               <hr className="w-[5rem] py-3 " />
               <Link
                 to="/"
-                className="lg:text-4xl text-2xl font-medium ff-l text-white animation"
+                className="lg:text-[1.75rem] text-2xl font-medium ff-l text-white animation"
               >
                 John Muir
               </Link>
