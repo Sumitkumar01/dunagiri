@@ -40,7 +40,7 @@ function Footer() {
           </p>
           <p className="text-base ff-op font-normal text-clrWhite text-justify">
             Embrace a transformative experience, attend a yoga retreat, or find
-            your escape in the heart of the Himalayas at{" "}
+            your escape in the heart of the Himalayas at{" "}<br/>
             <strong className="font-bold">Dunagiri Retreat</strong>.
           </p>
         </div>
