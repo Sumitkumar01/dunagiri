@@ -11,15 +11,16 @@ function FifthSection() {
       description: `A "playground of well-being" nestled in the heart of the Himalayas, Dunagiri Retreat is devoted entirely to wellbeing. The campus offers a vast array of accommodations, yoga halls, meditation rooms, and experiences, such as hikes, yoga, sound healing, wilderness exploration, and more. `,
     },
     {
-      imgUrl: img1,
-      heading: "Farm-Fresh Meals.",
-      description: `Nourish your body with clean, locally sourced vegan meals developed by our local Chef. Our light and savory meals are included (at no extra charge) with each stay and are specially designed using Ayurvedic principles to support the multi-step detoxification process so you can leave feeling better than ever.`,
-    },
-    {
       imgUrl: img2,
-      heading: "Yoga & Meditation.",
+      heading: "Yoga & Meditation Near Babaji's Cave.",
       description: `Retreat leaders and participants get access to our main Yoga Hall, which can host up to 40 people, our Pyramid Meditation Hall, a capacity of 20 people, and Babaji Temple, a capacity of 20 people.`,
     },
+    {
+      imgUrl: img1,
+      heading: "Farm-Fresh Ayurvedic Meals",
+      description: `Nourish your body with clean, locally sourced vegan meals developed by our local Chef. Our light and savory meals are included (at no extra charge) with each stay and are specially designed using Ayurvedic principles to support the multi-step detoxification process so you can leave feeling better than ever.`,
+    },
+    
   ];
 
   return (

@@ -35,7 +35,7 @@ function homepage() {
         <Section1 />
         <AreUSection />
         <GuestsExperience clas="lg:block hidden"/>
-        <ChoosePathSection clas="lg:block hidden" />
+        <ChoosePathSection  />
         <Section2/>
         <ForthSection clsname="lg:block hidden"/>
         <FifthSection />

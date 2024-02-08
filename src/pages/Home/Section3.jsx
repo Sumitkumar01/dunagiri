@@ -8,9 +8,9 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Section3 = () => {
   const socialContact = [
-    { title: "Facebook", icon: <FaFacebook />, link: "" },
-    { title: "InstagramSquare", icon: <FaInstagramSquare />, link: "" },
-    { title: "Linkedin", icon: <FaLinkedin />, link: "" },
+    { title: "InstagramSquare", icon: <FaInstagramSquare />, link: "https://www.instagram.com/dunagiri_retreat" },
+    { title: "Linkedin", icon: <FaLinkedin />, link: "https://www.linkedin.com/in/piyush-kumar-b859a16/" },
+    { title: "Facebook", icon: <FaFacebook />, link: "https://www.facebook.com/DunagiriRetreat/" },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Section3 = () => {
                 <ul className="flex gap-4 lg:justify-start justify-center">
                   {socialContact.map((item, i) => (
                     <li key={i}>
-                      <Link to={item.link} className="text-3xl">
+                      <Link to={item.link} target="_blank" className="text-3xl">
                         <span className="sr-only">{item.title}</span>
                         {item.icon}
                       </Link>

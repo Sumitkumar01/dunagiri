@@ -62,19 +62,19 @@ function AreUSection() {
             />
           </div>
           <div className="col-span-2">
-            <div className="py-3 px-6">
+            <div className="py-3 lg:px-6 px-4">
               <p className="uppercase ff-l font-light text-lg">
                 {pheadingText}
               </p>
             </div>
-            <div className="py-3 px-6">
+            <div className="py-3 lg:px-6 px-5">
               <h2 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl font-medium text-clrDarkGreen ff-f">
                 {headingText}
               </h2>
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 py-2 px-1">
               {data.map((item, i) => (
-                <div className="flex flex-col gap-6 px-6" key={i}>
+                <div className="flex flex-col gap-6 lg:px-6 px-5" key={i}>
                   <div className="flex justify-center lg:justify-start">
                     <img
                       src={item.png}
@@ -82,7 +82,7 @@ function AreUSection() {
                       aria-hidden="true"
                       style={{
                         filter:
-                          "invert(12%) sepia(21%) saturate(573%) hue-rotate(120deg) brightness(94%) contrast(90%)",
+                          "invert(18%) sepia(27%) saturate(580%) hue-rotate(75deg) brightness(59%) contrast(66%)",
                       }}
                     />
                   </div>

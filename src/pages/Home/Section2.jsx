@@ -8,7 +8,7 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
-import { Autoplay, Thumbs, FreeMode } from "swiper/modules";
+import { Autoplay, Thumbs, FreeMode,Navigation } from "swiper/modules";
 
 import img1 from "../../assets/images/sliderimg/asset13.avif";
 import img2 from "../../assets/images/sliderimg/Babaji.avif";
@@ -61,8 +61,8 @@ const Section2 = () => {
     <>
       <section className="py-7">
         <div className="custom_container">
-          <div className="py-4">
-            <h2 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-2xl ff-f font-normal text-clrDarkGreen text-center">
+          <div className="lg:py-4">
+            <h2 className="lg:text-[3.125rem] leading-[4.375rem] text-2xl ff-f font-normal text-clrDarkGreen text-center">
               Visit Mahavatar Babaji's Cave
             </h2>
           </div>
@@ -82,7 +82,7 @@ const Section2 = () => {
 
           <Swiper
             thumbs={{ swiper: thumbsSwiper }}
-            modules={[FreeMode, Thumbs, Autoplay]}
+            modules={[FreeMode, Thumbs, Autoplay,Navigation]}
             centeredSlides={true}
             loop={true}
             autoplay={{
@@ -90,11 +90,11 @@ const Section2 = () => {
               disableOnInteraction: false,
             }}
             spaceBetween={10}
-            // navigation={true}
-            // style={{
-            //   "--swiper-navigation-color": "#fff",
-            //   "--swiper-pagination-color": "#fff",
-            // }}
+            navigation={true}
+            style={{
+              "--swiper-navigation-color": "#fff",
+              "--swiper-pagination-color": "#fff",
+            }}
             className="mySwiper"
           >
             {imageData.map((item, i) => (
@@ -145,12 +145,12 @@ const Section2 = () => {
                 spaceBetween: 10,
               },
             }}
-            spaceBetween={10}
+            spaceBetween={0}
             slidesPerView={2}
             freeMode={true}
             watchSlidesProgress={true}
             modules={[FreeMode, Thumbs]}
-            className="mySwiper my-2"
+            className="mySwiper lg:my-2 my-[.1rem]"
           >
             {imageData.map((item, i) => (
               <SwiperSlide key={i}>
@@ -183,7 +183,7 @@ const Section2 = () => {
           <div className="text-center py-6">
             <Link
               to="/"
-              className="py-2 px-9 text-sm font-normal ff-f bg-clrLightGreen text-clrWhite hover:bg-clrWhite hover:text-clrLightGreen border border-clrLightGreen "
+              className="py-3 px-10 text-sm font-normal ff-f bg-clrLightGreen text-clrWhite hover:bg-clrWhite hover:text-clrLightGreen border border-clrLightGreen "
             >
               ACTIVITIES
             </Link>

@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-function ForthSection({clsname}) {
+function ForthSection({ clsname }) {
   const data = [
     {
       name: "Pragata",
@@ -63,7 +63,7 @@ function ForthSection({clsname}) {
             {data.map((item, i) => (
               <SwiperSlide key={i}>
                 <div className="flex w-full lg:flex-row  flex-col justify-around items-center lg:relative">
-                  <div className="h-full ">
+                  <div className="h-full width">
                     <img
                       src={item.imgurl}
                       width={493}
@@ -73,14 +73,18 @@ function ForthSection({clsname}) {
                     />
                   </div>
                   <div
-                    className={`bg-white lg:absolute lg:w-[30%] lg:h[90rem] py-8 px-5 bottom-3 ${
+                    className={`bg-white lg:absolute lg:w-[40%] w-[95%] lg:h[90rem] lg:py-10 py-8 lg:px-11 px-6 bottom-16 ${
                       i % 2 === 0 ? "right-0" : "left-0"
                     }`}
                   >
-                    <p className="lg:text-xl font-medium ff-f mb-3 text-justify" style={{wordSpacing:"-0.110rem"}}>
+                    <p
+                      className="lg:text-xl text-xl font-medium ff-f mb-3 text-justify"
+                      // style={{ wordSpacing: "-0.110rem" }}
+                    >
                       {item.experience}
                     </p>
-                    <hr className="w-2rem" />
+                    {/* <hr className="w-2rem" /> */}
+                    <div className="border-1 border-b-2 w-16 border-gray-900 my-10"></div>
                     <p className="text-lg ff-f font-normal">
                       {item.name}, {item.country}
                     </p>

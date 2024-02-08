@@ -59,7 +59,21 @@
   background-size: cover;
 }
 
+.swiper-button-prev{
+  background-color: rgba($color: #000000, $alpha: .7);
+  padding: 2rem;
+}
 
+.swiper-button-next{
+  background-color: rgba($color: #000000, $alpha: .7);
+  padding: 2rem;
+}
+.swiper-button-prev:active{
+  transform: scale(.9);
+}
+.swiper-button-next:active{
+  transform: scale(.9);
+}
 
 
 @media (width<769px) {
@@ -87,6 +101,10 @@
   }
   .bg-cover-2{
     background-attachment: fixed;
+  }
+
+  .width{
+    width: 22rem;
   }
 }
 

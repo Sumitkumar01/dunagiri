@@ -17,24 +17,36 @@ function Contact() {
     // },
     {
       data: `+919810267719`,
-      icon: <IoCallOutline />,
+      icon: <IoCallOutline class="lg:text-2xl text-3xl"/>,
       link: "tel:+919810267719",
     },
     {
       data: `delighted@dunagiri.com`,
-      icon: <GoMail />,
+      icon: <GoMail class="lg:text-2xl text-3xl"/>,
       link: "mailto:delighted@dunagiri.com",
     },
   ];
 
   const socialContact = [
     { title: "ThumbsUp", icon: <LuThumbsUp />, link: "" },
-    { title: "Facebook", icon: <FaFacebook />, link: "" },
-    { title: "InstagramSquare", icon: <FaInstagramSquare />, link: "" },
-    { title: "Linkedin", icon: <FaLinkedin />, link: "" },
+    {
+      title: "Facebook",
+      icon: <FaFacebook />,
+      link: "https://www.facebook.com/DunagiriRetreat/",
+    },
+    {
+      title: "InstagramSquare",
+      icon: <FaInstagramSquare />,
+      link: "https://www.linkedin.com/in/piyush-kumar-b859a16/",
+    },
+    {
+      title: "Linkedin",
+      icon: <FaLinkedin />,
+      link: "https://www.instagram.com/dunagiri_retreat",
+    },
   ];
   return (
-    <section className="py-5">
+    <section className="py-7">
       <div className="lg:grid  lg:grid-cols-2  custom_container gap-2">
         {/* -------------------------------contact details-------------------------------------- */}
 
@@ -50,9 +62,9 @@ function Contact() {
           <div className="flex items-start justify-start gap-3 lg:mt-5">
             <span className="sr-only">location</span>
             <span className="pt-2">
-              <IoLocationOutline />
+              <IoLocationOutline className="lg:text-2xl text-3xl"/>
             </span>
-            <p className="font-normal text-black text-base ff-op">
+            <p className="font-normal text-black text-base ff-op leading-[2rem]">
               Dunagiri Retreat, Village Chari, Near Mahavatar Babaji's Cave,
               Block, Dwarahat, Uttarakhand 263653 India
             </p>
@@ -62,17 +74,18 @@ function Contact() {
               <li key={i}>
                 <Link
                   to={item.link}
-                  className="flex items-center justify-start gap-3 text-base ff-op"
+                  target="_blank"
+                  className="flex items-center justify-start gap-3 text-base ff-op leading-[2rem]"
                 >
                   {item.icon} {item.data}
                 </Link>
               </li>
             ))}
           </ul>
-          <ul className="flex gap-3 justify-stretch">
+          <ul className="flex gap-5 justify-stretch">
             {socialContact.map((item, i) => (
               <li key={i}>
-                <Link to={item.link} className="text-3xl">
+                <Link to={item.link} target="_blank" className="text-3xl ">
                   <span className="sr-only">{item.title}</span>
 
                   {item.icon}
@@ -101,7 +114,7 @@ function Contact() {
                 id="f-name"
                 type="text"
                 required
-                className="w-full border border-2  border-clrDarkGreen text-sm outline-none p-2"
+                className="w-full border border-1  border-clrDarkGreen text-sm outline-none p-2"
               />
             </div>
             <div className="">
@@ -117,7 +130,7 @@ function Contact() {
                 id="l-name"
                 type="text"
                 required
-                className="w-full border border-2  border-clrDarkGreen text-sm outline-none p-2"
+                className="w-full border border-1  border-clrDarkGreen text-sm outline-none p-2"
               />
             </div>
             <div className="col-span-2">
@@ -133,7 +146,7 @@ function Contact() {
                 id="email"
                 type="email"
                 required
-                className="w-full border border-2  border-clrDarkGreen text-sm outline-none p-2"
+                className="w-full border border-1  border-clrDarkGreen text-sm outline-none p-2"
               />
             </div>
             <div className="col-span-2">
@@ -148,7 +161,7 @@ function Contact() {
               <input
                 id="phone"
                 type="text"
-                className="w-full border border-2 border-clrDarkGreen  text-sm outline-none p-2"
+                className="w-full border border-1 border-clrDarkGreen  text-sm outline-none p-2"
               />
             </div>
             <div className="col-span-2">
@@ -165,10 +178,10 @@ function Contact() {
                 id="message"
                 cols="30"
                 rows="3"
-                className="w-full border border-2  border-clrDarkGreen text-sm outline-none p-2"
+                className="w-full border border-1  border-clrDarkGreen text-sm outline-none p-2"
               ></textarea>
             </div>
-            <div className="lg:col-start-2 lg:col-end-4 p-1 col-span-full">
+            <div className="lg:col-start-2 lg:col-end-4 p-1 col-span-full mb-2">
               <button className="w-[100%] py-2 bg-clrLightGreen border text-sm border-clrLightGreen text-white text-center uppercase hover:bg-clrWhite hover:text-clrLightGreen active:scale-95">
                 send
               </button>
@@ -179,24 +192,21 @@ function Contact() {
         {/* -------------------------------form-------------------------------------- */}
 
         {/* -------------------------------map-------------------------------------- */}
-
-        
       </div>
       <div className="custom_container h-[40vh]">
-          <iframe
-            title="google map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.4281967432426!2d79.44595647554533!3d29.823059675035683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a7547b97e9c3b5%3A0xeed550edee305a4b!2sDunagiri%20Retreat!5e0!3m2!1sen!2sin!4v1707143119714!5m2!1sen!2sin"
-            // width={800}
-            // height={600}
-            style={{ border: 0 }}
-            allowFullScreen=""
-            // loading="lazy"
-            loading="async"
-            
-            className="w-full h-full"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
+        <iframe
+          title="google map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.4281967432426!2d79.44595647554533!3d29.823059675035683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a7547b97e9c3b5%3A0xeed550edee305a4b!2sDunagiri%20Retreat!5e0!3m2!1sen!2sin!4v1707143119714!5m2!1sen!2sin"
+          // width={800}
+          // height={600}
+          style={{ border: 0 }}
+          allowFullScreen=""
+          // loading="lazy"
+          loading="async"
+          className="w-full h-full"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
     </section>
   );
 }

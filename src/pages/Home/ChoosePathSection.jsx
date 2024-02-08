@@ -3,7 +3,7 @@ import CpImg1 from "../../assets/images/CpImg1.png";
 import CpImg2 from "../../assets/images/sliderimg/GuestMeditating.avif";
 import { Link } from "react-router-dom";
 
-function ChoosePathSection({clas}) {
+function ChoosePathSection() {
   const cpHeading = "choose your path";
   const cphText =
     "Choose your transformational adventure at your own pace — host a group retreat or come solo.";
@@ -24,10 +24,10 @@ function ChoosePathSection({clas}) {
     },
   ];
   return (
-    <section className={`bg-clrLightGray lg:py-7 py-3 ${clas}`}>
+    <section className='bg-[#EDEBEB] lg:py-7 py-3'>
       <div className="custom_container">
         <div className="py-3">
-          <h2 className="ff-f lg:text-[3.125rem] leading-[4.375rem] font-normal text-3xl text-center text-clrDarkGreen">{cpHeading}</h2>
+          <h2 className="ff-f lg:text-[3.125rem] leading-[4.375rem] font-normal text-3xl text-center text-clrDarkGreen capitalize">{cpHeading}</h2>
         </div>
         <div className="py-3">
           <p className="text-center ff-op lg:text-xl text-base font-normal">{cphText}</p>

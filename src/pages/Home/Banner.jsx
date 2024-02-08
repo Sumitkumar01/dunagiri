@@ -25,7 +25,7 @@ function Banner() {
               <Link
                 to="#contact"
                 smooth
-                className="bg-clrLightGreen w-max mx-auto text-clrWhite flex items-center justify-center uppercase py-1 px-5 border border-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite"
+                className="bg-clrLightGreen w-max mx-auto text-clrWhite flex items-center justify-center uppercase py-2 px-10 border border-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite"
               >
                 inquire now
               </Link>
