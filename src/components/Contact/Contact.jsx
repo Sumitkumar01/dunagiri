@@ -17,12 +17,12 @@ function Contact() {
     // },
     {
       data: `+919810267719`,
-      icon: <IoCallOutline class="lg:text-2xl text-3xl"/>,
+      icon: <IoCallOutline class="text-2xl"/>,
       link: "tel:+919810267719",
     },
     {
       data: `delighted@dunagiri.com`,
-      icon: <GoMail class="lg:text-2xl text-3xl"/>,
+      icon: <GoMail class="text-2xl"/>,
       link: "mailto:delighted@dunagiri.com",
     },
   ];
@@ -62,7 +62,7 @@ function Contact() {
           <div className="flex items-start justify-start gap-3 lg:mt-5">
             <span className="sr-only">location</span>
             <span className="pt-2">
-              <IoLocationOutline className="lg:text-2xl text-3xl"/>
+              <IoLocationOutline className="text-2xl"/>
             </span>
             <p className="font-normal text-black text-base ff-op leading-[2rem]">
               Dunagiri Retreat, Village Chari, Near Mahavatar Babaji's Cave,
