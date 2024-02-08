@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 
-import { Pagination, Autoplay } from "swiper/modules";
+import { Autoplay, Thumbs, FreeMode } from "swiper/modules";
 
 import img1 from "../../assets/images/sliderimg/asset13.avif";
 import img2 from "../../assets/images/sliderimg/Babaji.avif";
@@ -29,6 +31,8 @@ import ImgPopup from "../../components/common/ImgPopup";
 const Section2 = () => {
   const [show, setShow] = useState(false);
   const [data, setData] = useState({});
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   const imageData = [
     // { imgUrl: image1 },
     { imgUrl: img1, desc: "", title: "" },
@@ -77,30 +81,21 @@ const Section2 = () => {
           </div>
 
           <Swiper
-            modules={[Pagination, Autoplay]}
-            // pagination={{
-            //   type: "custom",
-            // }}
+            thumbs={{ swiper: thumbsSwiper }}
+            modules={[FreeMode, Thumbs, Autoplay]}
             centeredSlides={true}
             loop={true}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
-            breakpoints={{
-              640: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
-              768: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-            }}
+            spaceBetween={10}
+            // navigation={true}
+            // style={{
+            //   "--swiper-navigation-color": "#fff",
+            //   "--swiper-pagination-color": "#fff",
+            // }}
+            className="mySwiper"
           >
             {imageData.map((item, i) => (
               <SwiperSlide key={i}>
@@ -112,7 +107,62 @@ const Section2 = () => {
                   }}
                 >
                   <div
-                    className="bg-no-repeat bg-cover bg-center h-[40vh] w-full hover:scale-110 duration-300"
+                    className="bg-no-repeat bg-contain  bg-center h-[40vh] w-full hover:scale-110 duration-300"
+                    style={{ backgroundImage: `url(${item.imgUrl})`,backgroundAttachment:'fixed' }}
+                  >
+                    <div className="group flex flex-col items-center justify-end w-full h-full p-6 hover:bg-[rgba(0,0,0,.5)] ">
+                      <h3 className="text-2xl font-medium text-clrWhite ff-f group-hover:block hidden">
+                        {item.title}
+                      </h3>
+                      <p className="text-lg font-medium text-clrWhite ff-f group-hover:block hidden">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <Swiper
+            loop={true}
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
+            onSwiper={setThumbsSwiper}
+            breakpoints={{
+              // 640: {
+              //   slidesPerView: 2,
+              //   spaceBetween: 10,
+              // },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+            }}
+            spaceBetween={10}
+            slidesPerView={2}
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Thumbs]}
+            className="mySwiper my-2"
+          >
+            {imageData.map((item, i) => (
+              <SwiperSlide key={i}>
+                <div
+                  className="overflow-hidden"
+                  // onClick={() => {
+                  //   setShow(true);
+                  //   setData(item);
+                  // }}
+                >
+                  <div
+                    className="bg-no-repeat bg-cover bg-center h-[30vh] w-full hover:scale-110 duration-300"
                     style={{ backgroundImage: `url(${item.imgUrl})` }}
                   >
                     <div className="group flex flex-col items-center justify-end w-full h-full p-6 hover:bg-[rgba(0,0,0,.5)] ">
@@ -128,6 +178,7 @@ const Section2 = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+
           {show && <ImgPopup data={data} setShow={setShow} />}
           <div className="text-center py-6">
             <Link

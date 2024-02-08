@@ -20,7 +20,7 @@ const Section3 = () => {
           <div className="lg:grid lg:grid-cols-5 gap-4">
             <div className="col-span-3 lg:px-14">
               <div className="flex flex-col gap-4 justify-center h-full">
-                <h2 className="lg:text-[3.125rem] lg:leading-[4.375rem] text-3xl font-normal ff-f text-clrDarkGreen">
+                <h2 className="lg:text-[3.125rem] lg:text-start text-center lg:leading-[4.375rem] text-3xl font-normal ff-f text-clrDarkGreen">
                   Meet Our Founder <br />
                   Piyush Kumar
                 </h2>
@@ -42,14 +42,14 @@ const Section3 = () => {
                 <ul className="flex gap-4 lg:justify-start justify-center">
                   {socialContact.map((item, i) => (
                     <li key={i}>
-                      <Link to={item.link} className="text-3xl ">
+                      <Link to={item.link} className="text-3xl">
                         <span className="sr-only">{item.title}</span>
                         {item.icon}
                       </Link>
                     </li>
                   ))}
                 </ul>
-                <div className="my-4 w-full text-center lg:text-start">
+                <div className="my-4 w-full text-center lg:text-start py-2">
                   <Link
                     to="/"
                     className="text-clrWhite text-sm bg-clrLightGreen hover:text-clrLightGreen hover:bg-clrWhite border-clrLightGreen border text-center py-2 px-10 uppercase"

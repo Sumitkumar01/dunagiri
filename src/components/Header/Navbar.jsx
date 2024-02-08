@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/images/asset0.png";
 import mobLogo from "../../assets/images/MobileLogo.png";
 import { IoCallOutline } from "react-icons/io5";
-import { FaCaretDown } from "react-icons/fa";
+
 
 function Navbar() {
   const [open, setOpen] = useState(false);

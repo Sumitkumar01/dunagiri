@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-function ForthSection() {
+function ForthSection({clsname}) {
   const data = [
     {
       name: "Pragata",
@@ -35,13 +35,13 @@ function ForthSection() {
   ];
 
   return (
-    <section className="ForthSection lg:py-7 bg-clrLightGray">
+    <section className={`ForthSection lg:py-7 pt-4 bg-clrLightGray ${clsname}`}>
       <div className="custom_container">
-        <div className="flex flex-col items-center justify-center py-7">
-          <h2 className="text-center ff-f  lg:text-[3.125rem] lg:leading-[4.375rem] font-normal text-3xl text-clrDarkGreen">
+        <div className="flex flex-col items-center justify-center lg:py-7">
+          <h2 className="text-center ff-f  lg:text-[3.125rem] leading-[4.475rem] font-normal text-3xl text-clrDarkGreen">
             Guest Experiences
           </h2>
-          <p className="font-normal ff-op text-base text-justify">
+          <p className="font-normal ff-op text-base text-justify mb-4 lg:mb-0 lg:block hidden">
             Explore the heartwarming stories and experiences of individuals who
             have visited us and Mahavatar Babaji's Cave. Our guests recount
             transformative experiences, emphasizing the peace, spiritual

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import {  Autoplay } from "swiper/modules";
 
 import featurelogo from "../../assets/images/cnntravel.webp";
 import featurelogo1 from "../../assets/images/Outlook.png";
@@ -42,14 +42,14 @@ function SliderSection1(props) {
           <div>
             <Swiper
               loop={true}
-              pagination={true}
+              // pagination={true}
               slidesPerView={1}
               spaceBetween={10}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
               }}
-              modules={[Pagination, Autoplay]}
+              modules={[ Autoplay]}
             >
               {featureCardData.map((item, i) => (
                 <SwiperSlide key={i}>

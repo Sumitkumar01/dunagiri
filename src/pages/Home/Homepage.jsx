@@ -35,10 +35,12 @@ function homepage() {
         <Section1 />
         <AreUSection />
         <GuestsExperience clas="lg:block hidden"/>
-        <ChoosePathSection />
+        <ChoosePathSection clas="lg:block hidden" />
         <Section2/>
-        <ForthSection />
+        <ForthSection clsname="lg:block hidden"/>
         <FifthSection />
+        <ForthSection clsname="lg:hidden  block"/>
+
         <Section3 />
         <Testimonials />
         <Contact />

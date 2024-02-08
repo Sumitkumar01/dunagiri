@@ -47,7 +47,7 @@ function Contact() {
               Contact us
             </h2>
           </div>
-          <div className="flex items-start justify-start gap-3 mt-5">
+          <div className="flex items-start justify-start gap-3 lg:mt-5">
             <span className="sr-only">location</span>
             <span className="pt-2">
               <IoLocationOutline />
